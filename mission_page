@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mission page</title>
+</head>
+<body>
+  <section class="mission">
+  	<h1 class="title">Jeptis mission</h1>
+  	<h3 class="subtitle">Hvorfor bruger Jepti?</h3>
+  		<p></p>
+  		<a href="om_forsikring.html"></a>
+  		<p></p>
+  		<a href="om_sikkerhed.html"></a>
+  		<p></p>
+  		<a href="om_kontrakter.html"></a>
+
+  	
+
+
+
+
+
+
+  </section>
+ 
+</body>
+</html>
