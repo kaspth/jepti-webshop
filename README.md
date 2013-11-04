@@ -29,3 +29,8 @@ function name_of_function()
   // function body
 }
 ```
+
+#### De CSS classes vi bruger
+
+h1 - title
+h3 - subtitle
