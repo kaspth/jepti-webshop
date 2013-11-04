@@ -6,26 +6,17 @@ jepti-webshop
 Generelt:
 - kun på engelsk
 - ingen mellemrum
-- [camelcase](http://en.wikipedia.org/wiki/CamelCase)
+- underscores mellem ord (like_this), men bindestreger i css
 
 #### CSS
 
 ```css
-#pageHeader
-.capitalizeFirstLetterInEveryWord
+#page-header
+.class-name
 ```
 Som kan bruges i HTML:
 ```HTML
-<header id="pageHeader"></header>
-```
-
-#### Classes
-
-Start med stort bogstav.
-
-```php
-class Post {}
-class LineItem {}
+<header id="page-header"></header>
 ```
 
 #### functions
