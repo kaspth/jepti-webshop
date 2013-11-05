@@ -10,7 +10,7 @@
   <section class="mission">
   	<h1 class="title">Log ind</h1>
 
-		<form class="formular" action="log_ind.php">
+		<form class="formular" action="log_ind.php" method="post">
       <label for="email">Indtast din email</label><br>
       <input type="email" id="email"/><br>
       <label for="password">Password</label><br>
