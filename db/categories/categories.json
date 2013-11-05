@@ -1,0 +1,12 @@
+[
+{
+  "id": 1,
+  "title": "Transport",
+  "image_url": "http://placekitten.com/300"
+},
+{
+  "id": 2,
+  "title": "Ferie",
+  "image_url": "http://example.com"
+}
+]

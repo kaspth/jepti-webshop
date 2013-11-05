@@ -1,3 +1,8 @@
+<?
+include_once 'helpers/categories_helper.php';
+
+$categories = fetch_categories();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,12 +26,15 @@
     </section>
 
     <section class="categories">
-      <a href="products.php?category_id=1">
-        <article class="category">
-          <img src="assets/category_images/1/mobile.jpg">
-          <span class="category-title">Transport</span>
-        </article>
-      </a>
+      <? foreach($categories as $category) { ?>
+        <? $id = $category['id'] ?>
+        <a href="products.php?category_id=<?= $id ?>">
+          <article class="category" id="<?= $id ?>">
+            <img src="assets/category_images/<?= $id ?>.jpg">
+            <span class="category-title"><?= $category['title'] ?></span>
+          </article>
+        </a>
+      <? } ?>
     </section>
 
     <footer>
