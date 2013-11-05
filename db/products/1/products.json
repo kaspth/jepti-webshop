@@ -1,0 +1,12 @@
+[
+{
+  "name": "Grill",
+  "user_id": 1,
+  "price_per_day": 300.0
+},
+{
+  "name": "Bear Gryll",
+  "user_id": 1,
+  "price_per_day": 2.0
+}
+]
