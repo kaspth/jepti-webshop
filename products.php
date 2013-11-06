@@ -21,14 +21,16 @@
 
   <section class="products">
     <? foreach($products as $product) { ?>
-      <article class="product">
-        <?= image_tag_for_product($product) ?>
-        <h4><?= $product['name'] ?></h4>
+      <a class="product-link" href="product.php?id=<?= $product['id'] ?>">
+        <article class="product">
+          <?= image_tag_for_product($product) ?>
+          <h4><?= $product['name'] ?></h4>
 
-        <a href="http://maps.google.com">Vis på kort</a>
-        <span><em>By:</em> <?= $product['city'] ?></span>
-        <span><em>Pris:</em> <?= $product['price'] ?></span>
-      </article>
+          <a href="http://maps.google.com">Vis på kort</a>
+          <span><em>By:</em> <?= $product['city'] ?></span>
+          <span><em>Pris:</em> <?= $product['price'] ?></span>
+        </article>
+      </a>
     <? } ?>
   </section>
 
