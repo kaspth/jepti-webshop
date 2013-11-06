@@ -1,12 +1,18 @@
 [
 {
-  "name": "Skrald",
+  "id": 3,
   "user_id": 1,
-  "price_per_day": 300.0
+  "name": "Skrald",
+  "city": "Det gamle træværk bag hegnet",
+  "price_per_day": 300.0,
+  "description": "Den ene mands skrald er den anden mands guld"
 },
 {
-  "name": "Guld",
+  "id": 4,
   "user_id": 4,
-  "price_per_day": 2.0
+  "name": "Guld",
+  "city": "København NV",
+  "price_per_day": 2.0,
+  "description": "Den ene mands guld er stadig den ene mands guld, men nu kan du leje guldet."
 }
 ]
