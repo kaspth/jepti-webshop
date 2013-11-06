@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
+  <? include 'includes/head.php'; ?>
   <title>Mission page</title>
 </head>
 <body>
+  <? include 'includes/header.php'; ?>
+
   <section class="mission">
   	<h1 class="title">Jeptis mission</h1>
   	<h3 class="subtitle">Hvorfor bruger Jepti?</h3>
@@ -24,5 +26,7 @@
   		<a class="button" href="support_page.html">Support</a>
   	</span>
   </section>
+
+  <? include 'includes/footer.php'; ?>
 </body>
 </html>

@@ -6,20 +6,13 @@ $categories = fetch_categories();
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <? include 'includes/head.php'; ?>
     <title>Jepti</title>
   </head>
   <body>
+    <? include 'includes/header.php'; ?>
+    
     <section class="introduction">
-
-      <header id="application-header">
-        <a href="index.html" class="logo">
-          <img src="assets/logo.jpg" alt="Jepti">
-          <span class="logo-type">Jepti</span>
-        </a>
-        <input name="searchField" type="search">
-      </header>
-
       <img class="hero" src="assets/hero.jpg">
       <a href="vision.php">Vores vision</a>
       <a href="login.php">Log ind</a>
@@ -37,7 +30,7 @@ $categories = fetch_categories();
       <? } ?>
     </section>
 
-    <footer>
-    </footer>
+    <? include 'includes/scripts.php'; ?>
+    <? include 'includes/footer.php'; ?>
   </body>
 </html>

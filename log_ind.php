@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
+  <? include 'includes/head.php'; ?>
   <title>Log ind</title>
 </head>
 <body>
+  <? include 'includes/header.php'; ?>
+
   <section class="mission">
   	<h1 class="title">Log ind</h1>
-  	
+
 		<form class="formular" action="log_ind.php">
       <label for="email">Indtast din email</label><br>
       <input type="email" id="email"/><br>
@@ -21,5 +23,7 @@
       <input type="submit" name="submit" value="Tilmeld dig"/>
     </form>
   </section>
+
+  <? include 'includes/footer.php'; ?>
 </body>
 </html>

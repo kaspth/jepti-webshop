@@ -1,10 +1,12 @@
  <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <? include 'includes/head.php'; ?>
     <title>Ofte Stillede Spørgsmål</title>
 </head>
 <body>
+  <? include 'includes/header.php'; ?>
+
   <section class="questions">
     <h1 class="title">Ofte stillede spørgsmål</h1>
 
@@ -37,5 +39,7 @@
 
   <section class="answers">
   </section>
+
+  <? include 'includes/footer.php'; ?>
 </body>
 </html>
