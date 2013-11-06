@@ -30,7 +30,6 @@ $categories = fetch_categories();
       <? } ?>
     </section>
 
-    <footer>
-    </footer>
+    <? include 'includes/footer.php'; ?>
   </body>
 </html>
