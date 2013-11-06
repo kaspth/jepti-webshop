@@ -16,7 +16,7 @@ $product = fetch_product_by_id($product_id);
   <body>
     <? include 'includes/header.php'; ?>
 
-    <section class="mission">
+    <section class="product">
       <header class="information">
         <h1 class="title"><?= $product['name'] ?></h1>
         <?= image_tag_for_product($product) ?>
