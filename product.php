@@ -1,5 +1,5 @@
 <?
-include_once 'helpers/products_helper';
+include_once 'helpers/products_helper.php';
 
 $product_id = $_GET['id'];
 if (!isset($product_id))
