@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
+  <? include 'includes/head.php'; ?>
   <title>Mission page</title>
 </head>
 <body>
