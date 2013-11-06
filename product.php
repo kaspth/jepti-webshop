@@ -26,7 +26,6 @@ $product = fetch_product_by_id($product_id);
           <span><em>By:</em> <?= $product['city'] ?></span>
           <span><em>Pris:</em> <?= $product['price'] ?></span>
           <span><em>Depositum:</em> <?= $product['deposit'] ?></span>
-          <span><em>Betalingsmåde:</em> <?= payment_method_for_product($product) ?></span>
         </section>
       </header>
 
@@ -34,9 +33,7 @@ $product = fetch_product_by_id($product_id);
         <header>
           <h3 class="subtitle">Beskrivelse</h3>
         </header>
-        <p>
-          <?= $product['description'] ?>
-        </p>
+        <p><?= $product['description'] ?></p>
       </section>
 
       <section class="date-picker">
