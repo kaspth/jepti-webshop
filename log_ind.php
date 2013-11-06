@@ -5,6 +5,8 @@
   <title>Log ind</title>
 </head>
 <body>
+  <? include 'includes/header.php'; ?>
+
   <section class="mission">
   	<h1 class="title">Log ind</h1>
 
@@ -21,5 +23,7 @@
       <input type="submit" name="submit" value="Tilmeld dig"/>
     </form>
   </section>
+
+  <? include 'includes/footer.php'; ?>
 </body>
 </html>
