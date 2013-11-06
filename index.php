@@ -29,10 +29,7 @@ $categories = fetch_categories();
       <? foreach($categories as $category) { ?>
         <? $id = $category['id'] ?>
         <a href="products.php?category_id=<?= $id ?>">
-          <article class="category" id="<?= $id ?>">
-            <img src="assets/category_images/<?= $id ?>.jpg">
-            <span class="category-title"><?= $category['title'] ?></span>
-          </article>
+          <?= article_for_category($category) ?>
         </a>
       <? } ?>
     </section>
