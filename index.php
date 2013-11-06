@@ -11,14 +11,7 @@ $categories = fetch_categories();
   </head>
   <body>
     <section class="introduction">
-
-      <header id="application-header">
-        <a href="index.html" class="logo">
-          <img src="assets/logo.jpg" alt="Jepti">
-          <span class="logo-type">Jepti</span>
-        </a>
-        <input name="searchField" type="search">
-      </header>
+      <? include 'includes/header.php'; ?>
 
       <img class="hero" src="assets/hero.jpg">
       <a href="vision.php">Vores vision</a>
