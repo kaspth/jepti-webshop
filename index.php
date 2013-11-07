@@ -11,10 +11,10 @@ $categories = fetch_categories();
   </head>
   <body>
     <? include 'includes/header.php'; ?>
-    
+
     <section class="introduction">
       <img class="hero" src="assets/hero.jpg">
-      <a href="vision.php">Vores vision</a>
+      <a href="mission.php">Vores mission</a>
       <a href="login.php">Log ind</a>
     </section>
 
