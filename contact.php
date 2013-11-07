@@ -7,7 +7,7 @@
 <body>
   <? include 'helpers/header.php'; ?>
 
-  <section class="contact-sheet">
+  <section class="fade-on-submit sheet contact">
     <h1 class="title">Kontakt os</h1>
 
     <form class="contact" method="post" action="">
