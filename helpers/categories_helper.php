@@ -7,7 +7,7 @@ function fetch_categories() {
 }
 
 function fetch_category_by_id($id) {
-  return fetch_categories()[$id];
+  return fetch_categories()[$id - 1]; # adjust for zero indexing
 }
 
 function article_for_category($category) {
