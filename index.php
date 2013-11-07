@@ -13,9 +13,9 @@
     <?php include 'includes/header.php'; ?>
 
     <section class="introduction">
-      <img class="hero" src="assets/hero.jpg"><br>
-      <a class="button" href="mission.php">Vores mission</a>
-      <a class="button" href="login.php">Log ind</a>
+      <!-- <img class="hero" src="assets/hero.jpg"><br> -->
+      <a class="button center" href="mission.php">Vores mission</a>
+      <a class="button center" href="login.php">Log ind</a>
     </section>
 
     <section class="categories">

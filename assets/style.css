@@ -43,18 +43,18 @@ table {
 }
 
 /* global styles */
-
 body {
   font: 16px "Avenir", "Helvetica";
   background-color: #efefef;
   color: #999;
-  width: 95%;
-  margin: 0 auto;
+}
+
+#application-header {
+  background-color: #4aac48;
 }
 
 header {
-  padding: 3% 5%;
-  font-size: 375%;
+  padding: 2% 5%;
 }
 
 input[type=search] {

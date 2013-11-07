@@ -1,7 +1,6 @@
 <header id="application-header">
-  <a href="index.html" class="logo">
-    <img src="assets/logo.jpg" alt="Jepti">
-    <span class="logo-type">Jepti</span>
+  <a href="index.php" class="logo">
+    <img src="assets/logo.png" alt="Jepti">
   </a>
   <input name="searchField" type="search">
 </header>
