@@ -20,10 +20,10 @@
   		<a href="http://www.skat.dk/SKAT.aspx?oId=5811&vId=0&lang=DA">Skat</a><br>
 
   	<span>
-  		<a class="button" href="faq.html">FAQ</a>
+  		<a class="button" href="faq.php">FAQ</a>
   	</span>
   	<span>
-  		<a class="button" href="support_page.html">Support</a>
+  		<a class="button" href="support.php">Support</a>
   	</span>
   </section>
 
