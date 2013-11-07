@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <? include 'helpers/head.php'; ?>
+    <?php include 'helpers/head.php'; ?>
     <title>Tilmeld dig</title>
 </head>
 <body>
-  <? include 'helpers/header.php'; ?>
+  <?php include 'helpers/header.php'; ?>
 
   <section class="signup">
     <h1 class="title">Tilmeld dig</h1>
 
-    <form class="formular" method="post" action="<?# find suitable action ?>">
+    <form class="formular" method="post" action="<?php# find suitable action ?>">
       <label for="name">Fornavn:</label><br>
       <input type="text" id="first_name" /><br>
       <label for="efternavn">Efternavn:</label><br>
@@ -33,7 +33,7 @@
     </form>
   </section>
 
-  <? include 'helpers/scripts.php'; ?>
-  <? include 'helpers/footer.php'; ?>
+  <?php include 'helpers/scripts.php'; ?>
+  <?php include 'helpers/footer.php'; ?>
 </body>
 </html>

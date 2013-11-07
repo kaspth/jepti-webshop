@@ -21,7 +21,7 @@
     <section class="categories">
       <?php foreach($categories as $category) { ?>
         <?php $id = $category['id']; ?>
-        <a href="products.php?category_id=<?= $id ?>">
+        <a href="products.php?category_id=<?php echo $id; ?>">
           <?php echo article_for_category($category); ?>
         </a>
       <?php } ?>
