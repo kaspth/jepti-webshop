@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <? include 'includes/head.php'; ?>
+  <?php include 'includes/head.php'; ?>
   <title>Log ind</title>
 </head>
 <body>
-  <? include 'includes/header.php'; ?>
+  <?php include 'includes/header.php'; ?>
 
   <section class="mission">
   	<h1 class="title">Log ind</h1>
@@ -24,6 +24,6 @@
     </form>
   </section>
 
-  <? include 'includes/footer.php'; ?>
+  <?php include 'includes/footer.php'; ?>
 </body>
 </html>
