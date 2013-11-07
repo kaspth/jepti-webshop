@@ -13,15 +13,15 @@
     <?php include 'includes/header.php'; ?>
 
     <section class="introduction">
-      <img class="hero" src="assets/hero.jpg">
-      <a href="mission.php">Vores mission</a>
-      <a href="login.php">Log ind</a>
+      <img class="hero" src="assets/hero.jpg"><br>
+      <a class="button" href="mission.php">Vores mission</a>
+      <a class="button" href="login.php">Log ind</a>
     </section>
 
     <section class="categories">
       <?php foreach($categories as $category) { ?>
         <?php $id = $category['id']; ?>
-        <a href="products.php?category_id=<?php echo $id; ?>">
+        <a class="category-link" href="products.php?category_id=<?php echo $id; ?>">
           <?php echo article_for_category($category); ?>
         </a>
       <?php } ?>

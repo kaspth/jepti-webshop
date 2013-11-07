@@ -14,7 +14,7 @@ function article_for_category($category) {
   $id = $category['id'];
   return "<article class=\"category\" id=\"{$id}\">
     <img src=\"assets/category_images/{$id}.jpg\">
-    <span class=\"category-title\">{$category['title']}</span>
+    <span class=\"background\"><h3 class=\"category-title\">{$category['title']}</h3></span>
   </article>";
 }
 

@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
+  <?php include 'includes/head.php'; ?>
   <title>Produkter for <?php echo $category['title']; ?></title>
 </head>
 <body>
