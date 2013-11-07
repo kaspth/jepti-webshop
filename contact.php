@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <? include 'helpers/head.php'; ?>
+  <?php include 'includes/head.php'; ?>
   <title>Kontakt Jepti</title>
 </head>
 <body>
-  <? include 'helpers/header.php'; ?>
+  <?php include 'includes/header.php'; ?>
 
   <section class="fade-on-submit sheet contact">
     <h1 class="title">Kontakt os</h1>
 
     <form class="contact" method="post" action="">
       <label for="email">Email:</label>
-      <input type="text" id="email" name="email"/>
+      <input type="text" id="email" name="email" /><br>
 
       <label for="message">Besked:</label>
       <textarea id="message" name="message"></textarea>
@@ -26,7 +26,7 @@
     <p>Det betyder meget for os.</p>
   </section>
 
-  <? include 'includes/scripts.php'; ?>
-  <? include 'includes/footer.php'; ?>
+  <?php include 'includes/scripts.php'; ?>
+  <?php include 'includes/footer.php'; ?>
 </body>
 </html>
