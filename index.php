@@ -12,7 +12,7 @@
   <body>
     <?php include 'includes/header.php'; ?>
 
-    <section class="introduction">
+    <section class="center-section">
       <!-- <img class="hero" src="assets/hero.jpg"><br> -->
       <a class="button center" href="mission.php">Vores mission</a>
       <a class="button center" href="login.php">Log ind</a>
