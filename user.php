@@ -2,12 +2,13 @@
   include_once 'helpers/users_helper.php';
   include_once 'helpers/products_helper.php';
 
-  $user_id = $_GET['user_id'];
+  $user_id = $_GET['id'];
   if (!isset($user_id))
     header('Location: index.php');
 
   $user = fetch_user_by_id($user_id);
-  $user_title = $user['first_name'] . "'s profil";
+  $user_title = pluralize($user) . " profil";
+  # $products = fetch_products_for_user_id($user_id);
 ?>
 <!DOCTYPE html>
 <html>
