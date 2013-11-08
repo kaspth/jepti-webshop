@@ -100,9 +100,6 @@ img.hero {
 
 .category-link {
   text-decoration: none;
-}
-
-.category-link:visited {
   color: inherit;
 }
 
