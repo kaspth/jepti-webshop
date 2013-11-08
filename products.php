@@ -22,7 +22,7 @@
   <section class="products">
     <?php if (!isset($products)) { ?>
       <section class="center-section">
-        <h3 class="subtitle">Der er ingen produkter for denne kategori.</h3>
+        <h3 class="subtitle">Der er ingen produkter i denne kategori.</h3>
         <a class="back-redirect" href="index.php">Gå tilbage</a>
       </section>
     <?php } else { ?>
