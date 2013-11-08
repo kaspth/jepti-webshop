@@ -9,11 +9,10 @@
 
 .questions-list li {
   padding: 2px 0;
-  text-decoration: none;
 }
 
 .answers {
-	
+	visibility: hidden;
 }
 /*Svar:
 Nogle ejere tilbyder leveringsservice hvor produktet eller servicen leveres på din adresse:
