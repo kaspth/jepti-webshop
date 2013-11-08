@@ -20,10 +20,18 @@
   <?php include 'includes/_category.php'; ?>
 
   <section class="products">
-    <?php foreach($products as $product) { ?>
-      <?php include 'includes/_product.php'; ?>
+    <?php if (!isset($products)) { ?>
+      <section class="center-section">
+        <h3 class="subtitle">Der er ingen produkter for denne kategori.</h3>
+      </section>
+    <?php } else { ?>
+      <?php foreach($products as $product) { ?>
+        <?php include 'includes/_product.php'; ?>
+      <?php } ?>
     <?php } ?>
   </section>
 
+  <?php include 'includes/scripts.php'; ?>
+  <?php include 'includes/footer.php'; ?>
 </body>
 </html>
