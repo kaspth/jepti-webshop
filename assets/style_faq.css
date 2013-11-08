@@ -9,4 +9,24 @@
 
 .questions-list li {
   padding: 2px 0;
+  text-decoration: none;
 }
+
+.answers {
+	
+}
+/*Svar:
+Nogle ejere tilbyder leveringsservice hvor produktet eller servicen leveres på din adresse:
+
+Det er udlejer der selv sætter prisen for leveringsservice. 
+
+Prisen er inddelt i to niveauer. Først fastsætter man en zone, 
+som man bringer ud til for en fast pris. Derefter sætter ejer 
+den faste pris for denne startzone. Efterfølgende oplyser ejeren, 
+hvad prisen vil være for hver kilometer ud over denne zone, 
+
+Eksempel: hvis du skal betale 100 DKK for levering indenfor en 
+radius af 5 kilometer og 10 DKK for hver ekstra kilometer ud over det,
+så bliver prisen for en kunde, der bor 10 kilometer væk: første 5 kilometer
+ af 100 DKK + 5 (kilometer) x 10 DKK = 150 DKK.*/
+/*<section class="ansvers"-have to style so when user clicker on link it should jump down to the page and show answer*/
