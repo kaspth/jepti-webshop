@@ -1,0 +1,12 @@
+/* faq page */
+.questions {
+  margin: 20px;
+}
+
+.questions-list {
+  padding: 3px 0 15px 0;
+}
+
+.questions-list li {
+  padding: 2px 0;
+}
