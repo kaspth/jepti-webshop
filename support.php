@@ -7,8 +7,10 @@
 <body>
     <?php include 'includes/header.php'; ?>
 
-    <section class="support">
+    <header class="section-header">
         <h1 class="title">Support</h1>
+    </header>
+    <section class="support">
         <p>
             Vi er altid inden for rækkevidde, hvis du har spørgsmål.<br>
             Skriv til os på <a href="">mail</a><br>

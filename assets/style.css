@@ -53,7 +53,7 @@ body {
   background-color: #4aac48;
 }
 
-header {
+header, section {
   padding: 2% 5%;
 }
 
@@ -70,13 +70,11 @@ img.hero {
   display: none;
 }
 
-section {
-  width: 100%;
-}
-
-section img {
-  max-width: 500px;
-  min-width: 300px;
+.title {
+  font-size: 200%;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 4px solid #c4c4c4;
 }
 
 .button {
@@ -105,12 +103,10 @@ section img {
 
 article.category {
   position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
   max-width: 500px;
-  height: 200px;
-}
-
-article.category img {
-  overflow-y: hidden;
+  max-height: 200px;
 }
 
 .background {
