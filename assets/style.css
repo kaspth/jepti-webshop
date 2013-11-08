@@ -51,6 +51,7 @@ body {
 
 #application-header {
   background-color: #4aac48;
+  max-height: 70px; /* won't work because of padding */
 }
 
 header, section {
