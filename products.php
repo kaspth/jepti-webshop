@@ -23,6 +23,7 @@
     <?php if (!isset($products)) { ?>
       <section class="center-section">
         <h3 class="subtitle">Der er ingen produkter for denne kategori.</h3>
+        <a class="back-redirect" href="index.php">Gå tilbage</a>
       </section>
     <?php } else { ?>
       <?php foreach($products as $product) { ?>
