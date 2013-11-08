@@ -1,6 +1,6 @@
 <?php
-  include 'helpers/users_helper.php';
-  include 'helpers/products_helper.php';
+  include_once 'helpers/users_helper.php';
+  include_once 'helpers/products_helper.php';
 
   $user_id = $_GET['user_id'];
   if (!isset($user_id))
