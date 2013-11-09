@@ -14,13 +14,22 @@ section {
 	padding: 0 3% 0 0;
 }
 
+.input_description input, textarea {
+	min-width: 300px;
+}
+
+.input_description textarea {
+	min-height: 120px;
+}
+
 .confirm {
 	display: block;
  
 }
 
-.hidden_receipt {
+.hidden_receipt p{
 	/*visibility: hidden;*/
+	padding: 3% 0;
 }
 
 .question_answer {
