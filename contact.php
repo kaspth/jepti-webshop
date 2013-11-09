@@ -3,11 +3,12 @@
 <head>
   <?php include 'includes/head.php'; ?>
   <title>Kontakt Jepti</title>
+  <link href="assets/style_contact.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <?php include 'includes/header.php'; ?>
 
-  <section class="fade-on-submit sheet contact">
+  <section class="fade-on-submit-sheet-contact">
     <h1 class="title">Kontakt os</h1>
 
     <form class="contact" method="post" action="">
