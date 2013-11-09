@@ -20,10 +20,7 @@
 
     <section class="categories">
       <?php foreach($categories as $category) { ?>
-        <?php $id = $category['id']; ?>
-        <a class="category-link" href="products.php?category_id=<?php echo $id; ?>">
-          <?php echo article_for_category($category); ?>
-        </a>
+        <?php include 'includes/_category.php'; ?>
       <?php } ?>
     </section>
 
