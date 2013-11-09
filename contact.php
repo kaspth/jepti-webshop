@@ -31,7 +31,7 @@
     </form>
   </section>
 
-  <section class="hidden receipt">
+  <section class="hidden_receipt">
     <h1 class="title">Tak for din besked</h1>
     <p>Det betyder meget for os.</p>
   </section>
