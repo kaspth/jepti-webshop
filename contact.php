@@ -12,13 +12,22 @@
     <h1 class="title">Kontakt os</h1>
 
     <form class="contact" method="post" action="">
-      <label for="email">Email:</label>
+      <div class="input_description">
+        <label for="email">Email:</label>
+      </div>
+      
       <input type="text" id="email" name="email" /><br>
 
-      <label for="message">Besked:</label>
+      <div class="input_description">
+        <label for="message">Besked:</label>
+      </div>
+
       <textarea id="message" name="message"></textarea>
 
-      <input type="submit" name="submit" value="Send besked"/>
+      <div class="confirm">
+        <input type="submit" name="submit" value="Send besked"/>
+      </div>
+      
     </form>
   </section>
 

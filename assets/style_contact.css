@@ -1,0 +1,32 @@
+section {
+	padding: 1% 5%;
+}
+
+.fade-on-submit-sheet-contact {
+  margin: 20px 0 0 0;
+}
+
+.contact {
+  padding: 15px 0 0;
+}
+
+.input_description {
+	padding: 0 3% 0 0;
+}
+
+.confirm {
+	display: block;
+ 
+}
+
+.answers {
+	/*visibility: hidden;*/
+}
+
+.question_answer {
+	padding: 15px;
+	max-width: 330px;
+	border: 1px solid #c4c4c4;
+	border-radius: 4px;
+	/*visibility: hidden;*/
+}
