@@ -17,6 +17,7 @@
   <title>Produkter for <?php echo $category['title']; ?></title>
 </head>
 <body>
+  <?php include 'includes/header.php'; ?>
   <?php include 'includes/_category.php'; ?>
 
   <section class="products">
