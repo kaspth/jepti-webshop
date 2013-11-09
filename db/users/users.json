@@ -1,0 +1,37 @@
+[
+{
+  "id": 1,
+  "first_name": "Michael",
+  "last_name": "Bluth",
+  "email": "michael@bluthcompany.com",
+  "password": "$1$UI/uOEwB$4aTrsCnwiCgZ1Ls.6nOHN."
+},
+{
+  "id": 2,
+  "first_name": "G.O.B.",
+  "last_naem": "Bluth",
+  "email": "comeon@hottmail.com",
+  "password": "$1$uVvGOPiK$Apz3BB7.bwErmbp3bLDS51"
+},
+{
+  "id": 3,
+  "first_name": "George",
+  "last_name": "Bluth",
+  "email": "notouching@gmail.com",
+  "password": "$1$EkNY7sIn$Pk1FxsdXAzDEiAbCH6AOd."
+},
+{
+  "id": 4,
+  "first_name": "Maebe",
+  "last_name": "Bluth",
+  "email": "neglegteddaughter@live.com",
+  "password": "$1$7Q4P8FdH$dgtoAvU5M/m5hFIALelkI/"
+},
+{
+  "id": 5,
+  "first_name": "Tobias",
+  "last_name": "Fünke",
+  "email": "drfunky@theralyst.com",
+  "password": "$1$oZwI/Hh1$wusuBc1YZv7W3Fw0e3RO6."
+}
+]
