@@ -22,18 +22,23 @@
   <?php if (!isset($user)) { ?>
       <?php header("Vi kunne ikke finde nogen bruger.", true, 404); ?>
   <?php } else { ?>
-    <h1 class="title"><?php echo $user_title ?></h1>
+    <section class="user">
+      <header class="info">
+        <?php echo image_tag_for_user($product) ?><br>
 
-    <?php
-      # first_name
-      # last_name
-      # build products, reuse from products.php
-    ?>
+        <div class="first name"><?php echo $user['first_name'] ?></div>
+        <div class="last name"><?php echo $user['last_name'] ?></div>
+      </header>
 
-    <section class="products user">
-      <?php foreach ($products as $product) { ?>
-        <?php include 'includes/_product.php'; ?>
-      <?php } ?>
+      <section class="products">
+        <header>
+          <h3 class="subtitle"><?php echo pluralize($user) ?> produkter</h3>
+        </header>
+
+        <?php foreach ($products as $product) { ?>
+          <?php include 'includes/_product.php'; ?>
+        <?php } ?>
+      </section>
     </section>
   <?php } ?>
 
