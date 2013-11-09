@@ -9,7 +9,7 @@ function fetch_user_by_id($id) {
 }
 
 function image_tag_for_user($user) {
-  return "<img class=\"profile-image\" src=\"assets/user_images/{$user['id']}.jpg\" alt=\"{$user['first_name']\" />";
+  return "<img class=\"profile-image\" src=\"assets/user_images/{$user['id']}.jpg\" alt=\"{$user['first_name']}\" />";
 }
 
 function pluralize($user) {
