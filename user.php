@@ -8,7 +8,7 @@
 
   $user = fetch_user_by_id($user_id);
   $user_title = pluralize($user) . " profil";
-  # $products = fetch_products_for_user_id($user_id);
+  $products = fetch_products_for_user_id($user_id);
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,13 +25,16 @@
     <h1 class="title"><?php echo $user_title ?></h1>
 
     <?php
-
       # first_name
       # last_name
       # build products, reuse from products.php
-
     ?>
 
+    <section class="products user">
+      <?php foreach ($products as $product) { ?>
+        <?php include 'includes/_product.php'; ?>
+      <?php } ?>
+    </section>
   <?php } ?>
 
   <?php include 'includes/scripts.php'; ?>
