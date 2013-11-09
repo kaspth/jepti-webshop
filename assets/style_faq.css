@@ -1,14 +1,17 @@
 /* faq page */
-
+section {
+	padding: 1% 5%;
+}
 .subtitle {
 	font-size: 150%;
+	padding: 15px 0 0;
 }
 .questions {
-  margin: 20px;
+  margin: 20px 0 0 0;
 }
 
 .questions-list {
-  padding: 3px 0 15px 0;
+  padding: 3px 0;
 }
 
 .questions-list li {
@@ -16,20 +19,15 @@
 }
 
 .answers {
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
-/*Svar:
-Nogle ejere tilbyder leveringsservice hvor produktet eller servicen leveres på din adresse:
 
-Det er udlejer der selv sætter prisen for leveringsservice. 
+.question_answer {
+	padding: 15px;
+	max-width: 330px;
+	border: 1px solid #c4c4c4;
+	border-radius: 4px;
+	/*visibility: hidden;*/
+}
 
-Prisen er inddelt i to niveauer. Først fastsætter man en zone, 
-som man bringer ud til for en fast pris. Derefter sætter ejer 
-den faste pris for denne startzone. Efterfølgende oplyser ejeren, 
-hvad prisen vil være for hver kilometer ud over denne zone, 
-
-Eksempel: hvis du skal betale 100 DKK for levering indenfor en 
-radius af 5 kilometer og 10 DKK for hver ekstra kilometer ud over det,
-så bliver prisen for en kunde, der bor 10 kilometer væk: første 5 kilometer
- af 100 DKK + 5 (kilometer) x 10 DKK = 150 DKK.*/
 /*<section class="ansvers"-have to style so when user clicker on link it should jump down to the page and show answer*/

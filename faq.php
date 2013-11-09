@@ -4,6 +4,7 @@
     <?php include 'includes/head.php'; ?>
     <title>Ofte Stillede Spørgsmål</title>
     <link href="assets/style_faq.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body>
   <?php include 'includes/header.php'; ?>
@@ -39,6 +40,22 @@
   </section>
 
   <section class="answers">
+    <p class="question_answer">
+       Svar: <br>
+       Nogle ejere tilbyder leveringsservice hvor produktet eller servicen leveres på din adresse.<br><br>
+
+       Det er udlejer der selv sætter prisen for leveringsservice.<br><br>
+
+       Prisen er inddelt i to niveauer. Først fastsætter man en zone, 
+       som man bringer ud til for en fast pris. Derefter sætter ejer
+       den faste pris for denne startzone. Efterfølgende oplyser ejeren,
+       hvad prisen vil være for hver kilometer ud over denne zone.<br><br>
+
+       Eksempel: hvis du skal betale 100 DKK for levering indenfor en 
+       radius af 5 kilometer og 10 DKK for hver ekstra kilometer ud over det,
+       så bliver prisen for en kunde, der bor 10 kilometer væk: første 5 kilometer
+       af 100 DKK + 5 (kilometer) x 10 DKK = 150 DKK.
+    </p>
   </section>
 
   <?php include 'includes/footer.php'; ?>
