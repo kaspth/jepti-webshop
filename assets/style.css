@@ -121,64 +121,23 @@ img.hero {
   left: 5px;
 }
 
-.back-redirect::before {
-  content: "←"; /* find html encoded version */
-  display: inline-block;
-  position: relative;
-  right: 5px;
-}
-
-.background {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 10px 0;
-  background-color: rgb(207, 207, 207); /* #cfcfcf */
-  background-color: rgba(207, 207, 207, 0.7);
-}
-
-.categories {
-  padding: 0;
-}
-
-.category-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-article.category {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 5px;
-  max-width: 500px;
+article.category img {
+  overflow-y: hidden;
   max-height: 200px;
-}
-
-.category-title {
-  font-size: 150%;
-  padding: 2px 20px;
-}
-
-.statement {
-  margin: 2%;
-}
-
-.products {
-  padding: 0;
-}
-
-.product {
-  padding: 10px;
-  border-bottom: 2px solid;
-  background-color: #ddd;
-}
-
-.product-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.right {
-  float: right;
-}
+ }
+ 
+ .background {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   font-size: 150%;
+   width: 100%;
+   padding: 10px 0;
+   background-color: rgb(207, 207, 207); /* #cfcfcf */
+   background-color: rgba(207, 207, 207, 0.7);
+ }
+ 
+ .category-title {
+   padding: 5px;
+ }
+\ No newline at end of file
