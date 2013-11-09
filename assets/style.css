@@ -83,6 +83,11 @@ img.hero {
   border-bottom: 4px solid #c4c4c4;
 }
 
+.subtitle {
+  font-size: 150%;
+  padding: 8px 0;
+}
+
 .button {
   padding: 10px;
   font-size: 120%;
@@ -90,13 +95,20 @@ img.hero {
   text-decoration: none;
   background-color: #3e414c;
   color: #fcfcfc;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
-.back-redirect {
+.forward-redirect, .back-redirect {
   color: inherit;
   display: block;
   padding: 5px;
+}
+
+.forward-redirect::after {
+  content: "→";
+  display: inline-block;
+  position: relative;
+  left: 5px;
 }
 
 .back-redirect::before {
@@ -110,7 +122,6 @@ img.hero {
   position: absolute;
   left: 0;
   bottom: 0;
-  font-size: 150%;
   width: 100%;
   padding: 10px 0;
   background-color: rgb(207, 207, 207); /* #cfcfcf */
@@ -136,5 +147,10 @@ article.category {
 }
 
 .category-title {
-  padding: 5px;
+  font-size: 150%;
+  padding: 2px 20px;
+}
+
+.statement {
+  margin: 2%;
 }
