@@ -3,6 +3,7 @@
 <head>
     <?php include 'includes/head.php'; ?>
     <title>Ofte Stillede Spørgsmål</title>
+    <link href="assets/style_faq.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <?php include 'includes/header.php'; ?>
