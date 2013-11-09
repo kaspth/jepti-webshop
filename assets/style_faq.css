@@ -1,4 +1,8 @@
 /* faq page */
+
+.subtitle {
+	font-size: 150%;
+}
 .questions {
   margin: 20px;
 }
