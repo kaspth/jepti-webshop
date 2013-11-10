@@ -164,13 +164,21 @@ article.category {
   margin: 2%;
 }
 
-.product {
-  position: relative;
+.products {
   padding: 0;
 }
 
+.product {
+  padding: 10px;
+  border-bottom: 2px solid;
+  background-color: #ddd;
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .right {
-  position: absolute;
-  top: 5px;
-  right: 5px;
+  float: right;
 }
