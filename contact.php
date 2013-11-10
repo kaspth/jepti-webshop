@@ -20,13 +20,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Send mail</title>
     <?php include 'includes/head.php'; ?>
   <title>Kontakt Jepti</title>
   <link href="assets/style_contact.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
-    <html>
+    <body>
+      <html>
 <body> 
 <?php include 'includes/header.php'; ?> 
 
@@ -52,16 +51,16 @@
   else
   //if "email" is not filled out, display the form
     {
-    echo "<form method='post' action='contact_form.php'>
+    echo "<form method='post' action='contact.php'>
     <div class='input_description'>Username:</div>
     <input name='username' type='text'><br>
     <div class='input_description'>Email:</div>
-    <input name='email' type='email'><br>
+    <input name='email' type='text'><br>
     <div class='input_description'>Subject:</div>
     <input name='subject' type='text'><br>
     <div class='input_description'>Message:</div>
     <textarea name='message' id='message' rows='10' cols='40'></textarea><br>
-    <input type='submit' value='Send besked'>
+    <input type='submit'>
     </form>";
 
     }
@@ -97,10 +96,10 @@
 
       <div class="confirm">
         <input type="submit" name="submit" value="Send besked"/>
-      </div>-->
+      </div>
       
     </form>
-  </section>
+  </section>-->
 
   <!--<section class="hidden_receipt">
     <h1 class="title">Tak for Jeres besked</h1>
@@ -111,55 +110,6 @@
   <?php include 'includes/scripts.php'; ?>
   <?php include 'includes/footer.php'; ?>
       
-  </body>
+</body>
 </html>
 
-<!--
-
-<!DOCTYPE html>
-<html>
-<head>
-  <?php include 'includes/head.php'; ?>
-  <title>Kontakt Jepti</title>
-  <link href="assets/style_contact.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-  <?php include 'includes/header.php'; ?>
-
-  <section class="fade-on-submit-sheet-contact">
-    <h1 class="title">Kontakt os</h1>
-
-    <form class="contact" method="post" action="">
-      <div class="input_description">
-        <label for="email">Email:</label>
-      </div>
-
-      <div class="input_description">
-        <input type="text" id="email" name="email" /><br>
-      </div>
-
-      <div class="input_description">
-        <label for="message">Besked:</label>
-      </div>
-
-      <div class="input_description">
-        <textarea id="message" name="message"></textarea>
-      </div>
-
-      <div class="confirm">
-        <input type="submit" name="submit" value="Send besked"/>
-      </div>
-      
-    </form>
-  </section>
-
-  <section class="hidden_receipt">
-    <h1 class="title">Tak for Jeres besked</h1>
-    <p>Det betyder meget for os.<br>
-       I får svar fra os så hurtigt som muligt</p>
-  </section>
-
-  <?php include 'includes/scripts.php'; ?>
-  <?php include 'includes/footer.php'; ?>
-</body>
-</html>-->
