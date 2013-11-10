@@ -46,27 +46,28 @@
 
     mail("masechka1983@mail.ru",$subject,"From : {$username}-" . " " . "{$email}." . " " . "Message is :" . $message);
     echo "Thank you" . " " . $username . " " . "for sending mail." . " " . "Det betyder meget for os.";
-    break;
-    "I får svar fra os så hurtigt som muligt.";
+   
     
     }
   else
   //if "email" is not filled out, display the form
     {
     echo "<form method='post' action='contact_form.php'>
-    Email: <input name='email' type='text'><br>
-    Subject: <input name='subject' type='text'><br>
-    Username: <input name='username' type='text'><br>
-    Message:<br>
-    <textarea name='message' id='message' rows='15' cols='40'>
-    </textarea><br>
-    <input type='submit'>
+    <div class='input_description'>Username:</div>
+    <input name='username' type='text'><br>
+    <div class='input_description'>Email:</div>
+    <input name='email' type='email'><br>
+    <div class='input_description'>Subject:</div>
+    <input name='subject' type='text'><br>
+    <div class='input_description'>Message:</div>
+    <textarea name='message' id='message' rows='10' cols='40'></textarea><br>
+    <input type='submit' value='Send besked'>
     </form>";
 
     }
 ?>
 
-  <<!--<section class="fade-on-submit-sheet-contact">
+  <!--<section class="fade-on-submit-sheet-contact">
     <h1 class="title">Kontakt os</h1>
 
     <form class="contact" method="post" action="">
@@ -96,7 +97,7 @@
 
       <div class="confirm">
         <input type="submit" name="submit" value="Send besked"/>
-      </div>-->>
+      </div>-->
       
     </form>
   </section>
