@@ -1,3 +1,20 @@
-.description_input {
-	padding: 2% 0;
+.receipt p {
+	padding: 10px 0
+}
+
+.fade-on-submit {
+	padding: 10px 58px
+}
+
+.contact {
+	padding-top: 20px
+}
+
+.input_field input, textarea {
+	margin-bottom: 10px;
+	min-width: 250px
+}
+
+.input_field textarea {
+	min-height: 80px
 }
