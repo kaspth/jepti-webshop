@@ -24,7 +24,6 @@ section {
 
 .confirm {
 	display: block;
- 
 }
 
 .hidden_receipt p{
@@ -32,10 +31,6 @@ section {
 	padding: 3% 0;
 }
 
-.question_answer {
-	padding: 15px;
-	max-width: 330px;
-	border: 1px solid #c4c4c4;
-	border-radius: 4px;
-	/*visibility: hidden;*/
+.fill_up {
+	min-width: 300px;
 }
