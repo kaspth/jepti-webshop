@@ -53,16 +53,20 @@ section {
 .questions .answers {
  	display: inline-block;
  	float: left;
-	margin: 25px;
+	margin: 26px;
 	padding: 13px 15px;
 	font-size: 100%
 }
 
 .users_asks {
-	max-width: 330px;
+	max-width: 380px;
 	display: inline-block;
 	float: left;
 	margin-bottom: 300px;
 	margin-right: 25px
+}
+
+.questions-list {
+    max-width: 380px
 }
 }
