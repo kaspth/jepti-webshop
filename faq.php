@@ -4,7 +4,6 @@
     <?php include 'includes/head.php'; ?>
     <title>Ofte Stillede Spørgsmål</title>
     <link href="assets/style_faq.css" rel="stylesheet" type="text/css">
-    
 </head>
 <body>
   <?php include 'includes/header.php'; ?>
@@ -40,24 +39,53 @@
   </section>
 
   <section class="answers">
-    <p class="question_answer">
-       Svar: <br>
-       Nogle ejere tilbyder leveringsservice hvor produktet eller servicen leveres på din adresse.<br><br>
-
-       Det er udlejer der selv sætter prisen for leveringsservice.<br><br>
-
-       Prisen er inddelt i to niveauer. Først fastsætter man en zone, 
-       som man bringer ud til for en fast pris. Derefter sætter ejer
-       den faste pris for denne startzone. Efterfølgende oplyser ejeren,
-       hvad prisen vil være for hver kilometer ud over denne zone.<br><br>
-
-       Eksempel: hvis du skal betale 100 DKK for levering indenfor en 
-       radius af 5 kilometer og 10 DKK for hver ekstra kilometer ud over det,
-       så bliver prisen for en kunde, der bor 10 kilometer væk: første 5 kilometer
-       af 100 DKK + 5 (kilometer) x 10 DKK = 150 DKK.
-    </p>
+    <article id="1" class="answer">
+      <span>Vi modtager dankort og visa/dankort på Jepti</span>
+    </article>
+    <article id="2" class="answer">
+      <span>Det er gratis at oprette en profil og at lægge annoncer op. Jepti arbejder ud fra filosofien ”No cure – no pay”, hvilket betyder at du kun betaler når der foregår en reel handel hvor udlejer tjener penge på handlen. Her betaler udlejer 10 % i fee til Jepti.
+Inkluderet i det fee er en forsikring der dækker hver udlejning af et produkt med op til 100.000 DKK.
+Det er gratis for lejer at leje igennem systemet.</span>
+    </article>
+    <article id="3" class="answer">
+      <span>En masse tekst</span>
+    </article>
+    <article id="4" class="answer">
+      <span>En masse tekst</span>
+    </article>
+    <article id="5" class="answer">
+      <span>En masse tekst</span>
+    </article>
+    <article id="6" class="answer">
+      <span>En masse tekst</span>
+    </article>
+    <article id="7" class="answer">
+      <span>En masse tekst</span>
+    </article>
+    <article id="8" class="answer">
+      <span>En masse tekst</span>
+    </article>
+    <article id="9" class="answer">
+      <span>En masse tekst</span>
+    </article>
+    <article id="10" class="answer">
+      <span>En masse tekst</span>
+    </article>
+    <article id="11" class="answer">
+      <span>En masse tekst</span>
+    </article>
+    <article id="12" class="answer">
+      <span>En masse tekst</span>
+    </article>
+    <article id="13" class="answer">
+      <span>En masse tekst</span>
+    </article>
+    <article id="14" class="answer">
+      <span>En masse tekst</span>
+    </article>
   </section>
 
+  <?php include 'includes/scripts.php'; ?>
   <?php include 'includes/footer.php'; ?>
 </body>
 </html>
