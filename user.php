@@ -24,7 +24,7 @@
   <?php } else { ?>
     <section class="user">
       <header class="info">
-        <?php echo image_tag_for_user($product) ?><br>
+        <?php echo image_tag_for_user($user) ?><br>
 
         <div class="first name"><?php echo $user['first_name'] ?></div>
         <div class="last name"><?php echo $user['last_name'] ?></div>
