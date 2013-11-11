@@ -7,7 +7,7 @@ section {
 	padding: 15px 0 0
 }
 .questions {
-    margin: 20px
+    margin: 20px;
 }
 
 .questions .answers {
@@ -15,7 +15,8 @@ section {
 }
 
 .questions-list {
-    padding: 3px 0
+    padding: 3px 0;
+    max-width: 330px
 }
 
 .questions-list li {
@@ -45,4 +46,23 @@ section {
 .answers_list {
 	list-style: circle;
 	margin: 20px
+}
+
+@media all and (max-width: 1680px) and (min-width: 960px) {
+ 
+.questions .answers {
+ 	display: inline-block;
+ 	float: left;
+	margin: 25px;
+	padding: 13px 15px;
+	font-size: 100%
+}
+
+.users_asks {
+	max-width: 330px;
+	display: inline-block;
+	float: left;
+	margin-bottom: 300px;
+	margin-right: 25px
+}
 }

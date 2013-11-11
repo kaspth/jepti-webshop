@@ -10,31 +10,32 @@
 
   <section class="questions">
     <h1 class="title">Ofte stillede spørgsmål</h1>
+    <div class="users_asks">
+      <h3 class="subtitle">Generelle spørgsmål</h3>
+        <ul class="questions-list">
+          <li><a href="#1">Hvilke betalingsmuligheder er der?</a></li>
+          <li><a href="#2">Hvad koster det at bruge Jepti?</a></li>
+          <li><a href="#3">Er det nødvendigt med kontrakt?</a></li>
+          <li><a href="#4">Hvorfor er ikke så mange produkter på Jepti endnu?</a></li>
+        </ul>
 
-    <h3 class="subtitle">Generelle spørgsmål</h3>
-    <ul class="questions-list">
-      <li><a href="#1">Hvilke betalingsmuligheder er der?</a></li>
-      <li><a href="#2">Hvad koster det at bruge Jepti?</a></li>
-      <li><a href="#3">Er det nødvendigt med kontrakt?</a></li>
-      <li><a href="#4">Hvorfor er ikke så mange produkter på Jepti endnu?</a></li>
-    </ul>
+      <h3 class="subtitle">Lejer</h3>
+        <ul class="questions-list">
+          <li><a href="#5">Hvordan betaler jeg ejer?</a></li>
+          <li><a href="#6">Hvordan kan jeg se ejers kontaktinformation?</a></li>
+          <li><a href="#7">Hvorfor skal jeg registere mig?</a></li>
+          <li><a href="#8">Jeg kan ikke finde det produkt jeg skal bruge?</a></li>
+          <li><a href="#9">Hvordan udregnes prisen på leveringsservice?</a></li>
+        </ul>
 
-    <h3 class="subtitle">Lejer</h3>
-    <ul class="questions-list">
-      <li><a href="#5">Hvordan betaler jeg ejer?</a></li>
-      <li><a href="#6">Hvordan kan jeg se ejers kontaktinformation?</a></li>
-      <li><a href="#7">Hvorfor skal jeg registere mig?</a></li>
-      <li><a href="#8">Jeg kan ikke finde det produkt jeg skal bruge?</a></li>
-      <li><a href="#9">Hvordan udregnes prisen på leveringsservice?</a></li>
-    </ul>
-
-    <h3 class="subtitle">Ejer</h3>
-    <ul class="questions-list">
-      <li><a href="#10">Hvem kan udleje på Jepti?</a></li>
-      <li><a href="#11">Hvordan opretter jeg en annonce på sitet?</a></li>
-      <li><a href="#12">Hvad hvis mine ting går i stykker?</a></li>
-      <li><a href="#13">Kan jeg komme på sitet som professionel udlejer?</a></li>
-    </ul>
+      <h3 class="subtitle">Ejer</h3>
+        <ul class="questions-list">
+          <li><a href="#10">Hvem kan udleje på Jepti?</a></li>
+          <li><a href="#11">Hvordan opretter jeg en annonce på sitet?</a></li>
+          <li><a href="#12">Hvad hvis mine ting går i stykker?</a></li>
+          <li><a href="#13">Kan jeg komme på sitet som professionel udlejer?</a></li>
+        </ul>
+    </div>
 
     <section class="answers">
     <article id="1" class="answer">
