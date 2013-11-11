@@ -19,52 +19,49 @@
 ?>
 <!DOCTYPE html>
 <html>
-  <head>
-    <?php include 'includes/head.php'; ?>
+<head>
+  <?php include 'includes/head.php'; ?>
   <title>Kontakt Jepti</title>
   <link href="assets/style_contact.css" rel="stylesheet" type="text/css">
-  </head>
-    <body>
-      <html>
+</head>
 <body> 
-<?php include 'includes/header.php'; ?> 
+  <?php include 'includes/header.php'; ?> 
 
-<section class="fade-on-submit-sheet-contact">
-    <h1 class="title">Kontakt os</h1>
+  <section class="sheet-contact">
+    <?php
+      if (isset($_POST['email']))
+      {
+        //if "email" is filled out, send email
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = "From: {$username}\r\nMessage:\r\n" . $_POST['message'];
 
-<?php
-  if (isset($_POST['email']))
-  //if "email" is filled out, send email
-    {
-          
-    //send email
-    $username = $_POST['username'];
-    $message = $_POST['message'] ;
-    $email = $_POST['email'] ;
-    $subject = $_POST['subject'] ;
+        mail("masechka1983@mail.ru", $subject, $message); 
+    ?>
+      <section class="receipt">
+        <h1 class="title">Tak for din besked, <?php echo $username; ?></h1>
+        <p>Det betyder meget for os.</p>
+      </section>
+    <?php } else { ?>
+      <h1 class="title">Kontakt os</h1>
 
-    mail("masechka1983@mail.ru",$subject,"From : {$username}-" . " " . "{$email}." . " " . "Message is :" . $message);
-    echo "Thank you" . " " . $username . " " . "for sending mail." . " " . "Det betyder meget for os.";
-   
-    
-    }
-  else
-  //if "email" is not filled out, display the form
-    {
-    echo "<form method='post' action='contact.php'>
-    <div class='input_description'>Username:</div>
-    <input class='fill_up' name='username' type='text'><br>
-    <div class='input_description'>Email:</div>
-    <input class='fill_up' name='email' type='text'><br>
-    <div class='input_description'>Subject:</div>
-    <input class='fill_up' name='subject' type='text'><br>
-    <div class='input_description'>Message:</div>
-    <textarea name='message' id='message' rows='10' cols='40'></textarea><br>
-    <input type='submit'>
-    </form>";
+      <form class="contact" method="post" action="contact.php">
+        <label class="input_description" for="name">Fornavn:</label><br>
+        <input class="fill_up" name="username" type="text"><br>
 
-    }
-?>
+        <label class="input_description" for="email">Email:</label><br>
+        <input class="fill_up" name="email" type="email"><br>
+
+        <label class="input_description" for="subject">Emne:</label><br>
+        <input class="fill_up" name="subject" type="text"><br>
+
+        <label class="input_description" for="message">Besked:</label><br>
+        <textarea name="message" id="message" rows="10" cols="40"></textarea><br>
+        <input type="submit" name="submit" value="Send">
+      </form>
+    <?php } ?>
+  </section>
 
   <!--<section class="fade-on-submit-sheet-contact">
     <h1 class="title">Kontakt os</h1>
@@ -101,15 +98,8 @@
     </form>
   </section>-->
 
-  <!--<section class="hidden_receipt">
-    <h1 class="title">Tak for Jeres besked</h1>
-    <p>Det betyder meget for os.<br>
-       I får svar fra os så hurtigt som muligt</p>
-  </section>-->
-
   <?php include 'includes/scripts.php'; ?>
-  <?php include 'includes/footer.php'; ?>
-      
+  <?php include 'includes/footer.php'; ?>     
 </body>
 </html>
 
