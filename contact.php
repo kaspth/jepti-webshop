@@ -3,6 +3,7 @@
 <head>
   <?php include 'includes/head.php'; ?>
   <title>Kontakt Jepti</title>
+  <link href="assets/style_contact.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <?php include 'includes/header.php'; ?>
