@@ -35,9 +35,8 @@
       <li><a href="#12">Hvad hvis mine ting går i stykker?</a></li>
       <li><a href="#13">Kan jeg komme på sitet som professionel udlejer?</a></li>
     </ul>
-  </section>
 
-  <section class="answers">
+    <section class="answers">
     <article id="1" class="answer">
       <h3>Hvilke betalingsmuligheder er der?</h3>
       <div class="jeptis_answer">
@@ -155,6 +154,9 @@
       </div>
     </article>
   </section>
+  </section>
+
+  
 
   <?php include 'includes/scripts.php'; ?>
   <?php include 'includes/footer.php'; ?>
