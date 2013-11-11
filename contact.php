@@ -13,10 +13,15 @@
 
     <form class="contact" method="post" action="">
       <label for="email">Email:</label>
-      <input type="text" id="email" name="email" /><br>
+      <div class="input_field">
+        <input type="text" id="email" name="email" /><br>
+      </div>
+      
 
       <label for="message">Besked:</label>
-      <textarea id="message" name="message"></textarea>
+      <div class="input_field">
+        <textarea id="message" name="message"></textarea>
+      </div>
 
       <input type="submit" name="submit" value="Send besked"/>
     </form>
