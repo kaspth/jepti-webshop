@@ -64,10 +64,6 @@ body {
   max-height: 70px; /* won't work because of padding */
 }
 
-header, section {
-  padding: 2% 5%;
-}
-
 input[type=search] {
   float: right;
 }
@@ -95,7 +91,7 @@ img.hero {
 
 .subtitle {
   font-size: 150%;
-  padding: 8px 0;
+  padding: 8px 5%;
 }
 
 .button {
@@ -136,6 +132,15 @@ img.hero {
   padding: 10px 0;
   background-color: rgb(207, 207, 207); /* #cfcfcf */
   background-color: rgba(207, 207, 207, 0.7);
+}
+
+.dark {
+  background-color: rgb(51, 51, 51);
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+.dark * {
+  color: #eee;
 }
 
 .categories {
@@ -181,4 +186,29 @@ article.category {
 
 .right {
   float: right;
+}
+
+.info {
+  position: relative;
+  max-height: 220px;
+  overflow: hidden;
+}
+
+.info img {
+  width: 100%;
+  height: auto;
+}
+
+.info .background {
+  padding: 5px 0;
+}
+
+.name {
+  padding: 0 15px;
+  font-size: 130%;
+}
+
+.name.last {
+  font-weight: 500;
+  font-size: 150%;
 }
