@@ -10,6 +10,10 @@
 	padding-top: 20px
 }
 
+.contact label {
+	font-size: 120%
+}
+
 .input_field input, textarea {
 	margin-bottom: 15px;
 	min-width: 250px
@@ -20,5 +24,9 @@
 }
 
 .submit_field input {
-	border-radius: 8px
+	border-radius: 8px;
+	color: #fcfcfc;
+	background-color: #3e414c;
+	padding: 10px;
+	font-size: 120%;
 }
