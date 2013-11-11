@@ -11,10 +11,14 @@
 }
 
 .input_field input, textarea {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	min-width: 250px
 }
 
 .input_field textarea {
 	min-height: 80px
+}
+
+.submit_field input {
+	border-radius: 8px
 }

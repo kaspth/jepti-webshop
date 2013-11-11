@@ -24,7 +24,9 @@
             <textarea id="message" name="message"></textarea>
           </div>
 
-          <input type="submit" name="submit" value="Send besked"/>
+          <div class="submit_field">
+            <input type="submit" name="submit" value="Send besked"/>
+          </div>
         </form>
   </section>
 
