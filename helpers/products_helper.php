@@ -20,7 +20,7 @@ function fetch_products_for_user_id($id) {
     if ($product["user_id"] == $id)
       $products[] = $product;
   });
-  return $products;
+  return empty($products) ? null : $products;
 }
 
 function find_product_by($key, $value) {
