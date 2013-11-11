@@ -53,11 +53,11 @@
     {
     echo "<form method='post' action='contact.php'>
     <div class='input_description'>Username:</div>
-    <input name='username' type='text'><br>
+    <input class='fill_up' name='username' type='text'><br>
     <div class='input_description'>Email:</div>
-    <input name='email' type='text'><br>
+    <input class='fill_up' name='email' type='text'><br>
     <div class='input_description'>Subject:</div>
-    <input name='subject' type='text'><br>
+    <input class='fill_up' name='subject' type='text'><br>
     <div class='input_description'>Message:</div>
     <textarea name='message' id='message' rows='10' cols='40'></textarea><br>
     <input type='submit'>
