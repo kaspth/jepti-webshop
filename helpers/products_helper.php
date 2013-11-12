@@ -39,7 +39,8 @@ function map_products($operation) {
     foreach ($products as $product)
       $operation($product);
 
-    $file = path_for_category_id($category_id++);
+    $category_id++;
+    $file = path_for_category_id($category_id);
   }
   return null;
 }
