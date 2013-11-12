@@ -230,6 +230,10 @@ img.hero {
   bottom: 10px;
 }
 
-.background.inset * {
+.background.inset *, .user-link {
   margin: 0 15px;
+}
+
+.user-link.right {
+  text-align: right;
 }
