@@ -137,6 +137,24 @@ article.category img {
   background-color: rgba(207, 207, 207, 0.7);
 }
 
+.categories {
+  padding: 0;
+}
+
+.category-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+article.category {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+  max-width: 500px;
+  max-height: 200px;
+}
+
 .category-title {
-  padding: 5px;
+  font-size: 150%;
+  padding: 2px 20px;
 }
