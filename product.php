@@ -42,12 +42,7 @@ $user = fetch_user_by_id($product['user_id']);
         <p><?php echo $product['description']; ?></p>
       </section>
 
-      <section class="date-picker">
-        <h4>Hvornår vil du leje?</h4>
-        <!-- indsæt kalender her -->
-      </section>
-
-      <?php# <input type="submit" name="submit" value="Forespørg"/> ?>
+      <!-- <input type="submit" name="submit" value="Forespørg udlejning"/> -->
     </section>
 
     <?php include 'includes/scripts.php'; ?>
