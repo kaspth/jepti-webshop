@@ -152,7 +152,7 @@ img.hero {
   color: inherit;
 }
 
-.category, .product {
+.category, .product-listing {
   position: relative;
   overflow: hidden;
   max-width: 500px;
@@ -180,6 +180,19 @@ img.hero {
 .product-link {
   text-decoration: none;
   color: inherit;
+}
+
+.product-banner-image {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.list-information, .description {
+  margin: 0 15px;
+}
+
+.description .subtitle {
+  text-align: center;
 }
 
 .right {

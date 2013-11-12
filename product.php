@@ -23,8 +23,8 @@ $product = fetch_product_by_id($product_id);
 
         <section class="list-information">
           <a href="http://maps.google.com">Vis på kort</a>
-          <span><em>By:</em> <?php echo $product['city']; ?></span>
-          <span><em>Pris per dag:</em> <?php echo $product['price']; ?></span>
+          <div><em>By:</em> <?php echo $product['city']; ?></div>
+          <div><em>Pris per dag:</em> <?php echo $product['price']; ?></div>
         </section>
       </header>
 
