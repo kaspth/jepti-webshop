@@ -1,3 +1,15 @@
+<?
+include_once 'helpers/users_helper.php';
+
+$email = $_POST["email"];
+$password = $_POST["password"];
+
+if (isset($email)) {
+  $user = fetch_user_by_email($email);
+  if (authenticate_user($user, $password))
+    header("Location: user.php?id=" . $user["id"]);
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>

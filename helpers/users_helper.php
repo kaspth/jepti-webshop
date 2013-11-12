@@ -1,11 +1,46 @@
 <?php
 
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+
 include_once 'json_helper.php';
 
 function fetch_user_by_id($id) {
   $users = read_json('db/users/users.json');
   if (!isset($users)) return null;
   return $users[$id - 1]; # adjust for zero indexing
+}
+
+function fetch_user_by_email($email) {
+  $users = read_json('db/users/users.json');
+  if (!isset($users)) return null;
+
+  foreach ($users as $user)
+    if ($user["email"] == $email)
+      return $user;
+
+  return null;
+}
+
+function authenticate_user($user, $password) {
+  if ($_SESSION["user_id"] == $user["id"])
+    return true;
+
+  if ($user["password"] == $password) {
+    $_SESSION["user_id"] = $user["id"];
+    return true;
+  }
+
+  return false;
+}
+
+function current_user() {
+  return fetch_user_by_id($_SESSION["user_id"]);
+}
+
+function logout_user() {
+  unset($_SESSION["user_id"]);
 }
 
 function image_tag_for_user($user) {
