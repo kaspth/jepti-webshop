@@ -184,7 +184,6 @@ img.hero {
 
 .product-banner-image {
   width: 100%;
-  padding: 10px 0;
 }
 
 .list-information, .description {
@@ -236,4 +235,8 @@ img.hero {
 
 .user-link.right {
   text-align: right;
+}
+
+.information img {
+  padding-bottom: 10px;
 }
