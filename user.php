@@ -23,7 +23,7 @@
       <?php header("Vi kunne ikke finde nogen bruger.", true, 404); ?>
   <?php } else { ?>
     <section class="user">
-      <header class="info">
+      <header class="info crop">
         <?php echo image_tag_for_user($user) ?><br>
 
         <div class="background dark">

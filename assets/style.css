@@ -152,11 +152,15 @@ img.hero {
   color: inherit;
 }
 
-article.category {
+.category, .product {
   position: relative;
   overflow: hidden;
-  margin-bottom: 5px;
   max-width: 500px;
+  max-height: 200px;
+}
+
+.category {
+  margin-bottom: 5px;
   max-height: 200px;
 }
 
@@ -173,12 +177,6 @@ article.category {
   padding: 0;
 }
 
-.product {
-  padding: 10px;
-  border-bottom: 2px solid;
-  background-color: #ddd;
-}
-
 .product-link {
   text-decoration: none;
   color: inherit;
@@ -188,13 +186,13 @@ article.category {
   float: right;
 }
 
-.info {
+.crop {
   position: relative;
   max-height: 220px;
   overflow: hidden;
 }
 
-.info img {
+.crop img {
   width: 100%;
   height: auto;
 }
@@ -211,4 +209,14 @@ article.category {
 .name.last {
   font-weight: 500;
   font-size: 150%;
+}
+
+.product-location {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+}
+
+.background.inset * {
+  margin: 0 15px;
 }

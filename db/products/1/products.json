@@ -2,17 +2,9 @@
 {
   "id": 1,
   "user_id": 1,
-  "name": "Grill",
-  "city": "Holme Olstrup",
+  "name": "VW Polo",
+  "city": "Virum",
   "price_per_day": 300.0,
-  "description": "Dette er en meget fin grill. Nok en af de fineste griller jeg nogensinde har set."
-},
-{
-  "id": 2,
-  "user_id": 1,
-  "name": "Bear Gryll",
-  "city": "Hvor der er farligt",
-  "price_per_day": 2.0,
-  "description": "Discovery vært nu som grill."
+  "description": "Dette er en meget fin bil. Nok en af de fineste biler jeg nogensinde har set."
 }
 ]
