@@ -7,7 +7,7 @@ function fetch_products_for_category_id($id) {
 }
 
 function image_tag_for_product($product) {
-  return "<img class=\"product-banner-image\" src=\"{$product['image_url']}\" alt=\"{$product['image_alt']}\" />";
+  return "<img class=\"product-banner-image\" src=\"assets/product_images/{$product['id']}.jpg\" alt=\"{$product['name']}\" />";
 }
 
 function fetch_product_by_id($id) {
