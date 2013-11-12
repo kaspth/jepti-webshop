@@ -1,5 +1,5 @@
 <a class="product-link" href="product.php?id=<?php echo $product['id']; ?>">
-  <article class="product">
+  <article class="product-listing">
     <div class="crop">
       <?php echo image_tag_for_product($product); ?>
     </div>
