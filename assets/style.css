@@ -41,18 +41,17 @@
   border-collapse: collapse;
   border-spacing: 0;
  }
- 
+
  /* global styles */
  body {
    font: 16px "Avenir", "Helvetica";
    background-color: #efefef;
    color: #333;
  }
- 
+
  #application-header {
    background-color: #4aac48;
  }
- 
 
 /* clearfix */
 .group:before, .group:after {
