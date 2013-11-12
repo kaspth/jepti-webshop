@@ -121,11 +121,6 @@ img.hero {
   left: 5px;
 }
 
-article.category img {
-  overflow-y: hidden;
-  max-height: 200px;
- }
-
 .background {
   position: absolute;
   left: 0;
