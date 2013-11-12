@@ -24,10 +24,14 @@ function fetch_products_for_user_id($id) {
 }
 
 function find_product_by($key, $value) {
-  map_products(function($product) use ($key, $value) {
-    if ($product[$key] == $value)
-      return $product;
+  $found_product = null;
+  map_products(function($product) use ($key, $value, &$found_product) {
+    if ($product[$key] == $value) {
+      $found_product = $product;
+      return true;
+    }
   });
+  return $found_product;
 }
 
 function map_products($operation) {
@@ -37,7 +41,8 @@ function map_products($operation) {
   while(file_exists($file)) {
     $products = read_json($file);
     foreach ($products as $product)
-      $operation($product);
+      if ($operation($product))
+        break;
 
     $category_id++;
     $file = path_for_category_id($category_id);
