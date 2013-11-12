@@ -20,7 +20,7 @@ function fetch_products_for_user_id($id) {
     if ($product["user_id"] == $id)
       $products[] = $product;
   });
-  return $products;
+  return empty($products) ? null : $products;
 }
 
 function find_product_by($key, $value) {
@@ -39,7 +39,8 @@ function map_products($operation) {
     foreach ($products as $product)
       $operation($product);
 
-    $file = path_for_category_id($category_id++);
+    $category_id++;
+    $file = path_for_category_id($category_id);
   }
   return null;
 }

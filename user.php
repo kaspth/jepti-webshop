@@ -24,19 +24,29 @@
   <?php } else { ?>
     <section class="user">
       <header class="info">
-        <?php echo image_tag_for_user($product) ?><br>
+        <?php echo image_tag_for_user($user) ?><br>
 
-        <div class="first name"><?php echo $user['first_name'] ?></div>
-        <div class="last name"><?php echo $user['last_name'] ?></div>
+        <div class="background dark">
+          <div class="first name"><?php echo $user['first_name'] ?></div>
+          <div class="last name"><?php echo $user['last_name'] ?></div>
+        </div>
       </header>
 
       <section class="products">
-        <header>
-          <h3 class="subtitle"><?php echo pluralize($user) ?> produkter</h3>
-        </header>
+        <?php if (!isset($products)) { ?>
 
-        <?php foreach ($products as $product) { ?>
-          <?php include 'includes/_product.php'; ?>
+          <section class="center-section">
+            <h3 class="subtitle"><?php echo $user['first_name'] ?> har ingen produkter.</h3>
+          </section>
+
+        <?php } else { ?>
+          <header>
+            <h3 class="subtitle"><?php echo pluralize($user) ?> produkter</h3>
+          </header>
+
+          <?php foreach ($products as $product) { ?>
+            <?php include 'includes/_product.php'; ?>
+          <?php } ?>
         <?php } ?>
       </section>
     </section>

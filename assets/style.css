@@ -42,17 +42,6 @@
   border-spacing: 0;
  }
 
- /* global styles */
- body {
-   font: 16px "Avenir", "Helvetica";
-   background-color: #efefef;
-   color: #333;
- }
-
- #application-header {
-   background-color: #4aac48;
- }
-
 /* clearfix */
 .group:before, .group:after {
   content: "";
@@ -73,10 +62,6 @@ body {
 #application-header {
   background-color: #4aac48;
   max-height: 70px; /* won't work because of padding */
-}
-
-header, section {
-  padding: 2% 5%;
 }
 
 input[type=search] {
@@ -106,7 +91,7 @@ img.hero {
 
 .subtitle {
   font-size: 150%;
-  padding: 8px 0;
+  padding: 8px 15px;
 }
 
 .button {
@@ -132,15 +117,30 @@ img.hero {
   left: 5px;
 }
 
+.back-redirect::before {
+  content: "←"; /* find html encoded version */
+  display: inline-block;
+  position: relative;
+  right: 5px;
+}
+
 .background {
   position: absolute;
   left: 0;
   bottom: 0;
-  font-size: 150%;
   width: 100%;
   padding: 10px 0;
   background-color: rgb(207, 207, 207); /* #cfcfcf */
   background-color: rgba(207, 207, 207, 0.7);
+}
+
+.dark {
+  background-color: rgb(51, 51, 51);
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+.dark * {
+  color: #eee;
 }
 
 .categories {
@@ -163,4 +163,52 @@ article.category {
 .category-title {
   font-size: 150%;
   padding: 2px 20px;
+}
+
+.statement {
+  margin: 2%;
+}
+
+.products {
+  padding: 0;
+}
+
+.product {
+  padding: 10px;
+  border-bottom: 2px solid;
+  background-color: #ddd;
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.right {
+  float: right;
+}
+
+.info {
+  position: relative;
+  max-height: 220px;
+  overflow: hidden;
+}
+
+.info img {
+  width: 100%;
+  height: auto;
+}
+
+.info .background {
+  padding: 5px 0;
+}
+
+.name {
+  padding: 0 15px;
+  font-size: 130%;
+}
+
+.name.last {
+  font-weight: 500;
+  font-size: 150%;
 }
