@@ -42,7 +42,19 @@ $user = fetch_user_by_id($product['user_id']);
         <p><?php echo $product['description']; ?></p>
       </section>
 
+<<<<<<< Updated upstream
       <!-- <input type="submit" name="submit" value="Forespørg udlejning"/> -->
+=======
+      <?php if (!$uploaded_by_current_user) { ?>
+        <section class="timeline-container">
+          <img class="replaceable" src="assets/timeline_images/1.jpg" alt="">
+        </section>
+
+        <section class="rental center-section">
+          <a href="rental_request.php">Forespørg udlejning</a>
+        </section>
+      <?php } ?>
+>>>>>>> Stashed changes
     </section>
 
     <?php include 'includes/scripts.php'; ?>
