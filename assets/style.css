@@ -253,8 +253,30 @@ img.hero {
 
 /* footer */
 
-.footer_links {
-  display: inline;
-  width: 150px;
+footer {
+  background-color: #4aac48;
+  max-height: 100%;
+  font-size: 80%;
+  color: #efefef;
+  margin: 20px 0 0;
+}
 
+.footer_links {
+  padding: 16px;
+  display: inline-block;
+  float: left;
+  width: 150px;
+}
+
+.footer_links a {
+  color: inherit;
+}
+
+#footer_adresse {
+  display: inline-block;
+  padding: 16px;
+}
+
+.copyright {
+  margin: 18px 15px 0;
 }

@@ -1,30 +1,22 @@
 <footer>
-	<div class="footer_links">
-	  Om os
-	  <a href="om_os.php"></a>
-	</div>
+	<section class="footer_links">
+	    <ul>
+          <li><a href="om_os.php">Om os</a></li>
+          <li><a href="presse.php">Presse</a></li>
+          <li><a href="brugervilkår.php">Brugervilkår for sitet</a></li>
+          <li><a href="cookie.php">Cookie og privatlivspolitik</a></li>
+        </ul>
+	</section>
 
-	<div class="footer_links">
-	  Presse
-	  <a href="presse.php"></a>
-	</div>
+    
+    <section id="footer_adresse">Usserød Kongevej 80<br>
+      2970 Hørsholm<br>
+      Telefon: 71990905
+    </section>
 
-	<div class="footer_links">
-	  Brugervilkår
-	  <a href="brugervilkår.php"></a>
+    <div class="copyright">
+      &copy; Jepti 2012
     </div>
 
-    <div class="footer_links">
-      Cookie og privatlivspolitik
-      <a href="cookie.php"></a>
-    </div>
-
-    <div class="footer_links">
-      &copy Jepti 2012
-    </div>
-
-    <div class="footer_links">
-      Usserød Kongevej 80 2970 Hørsholm Telefon: 71990905
-    </div>
 
 </footer>
