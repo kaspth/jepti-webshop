@@ -249,4 +249,12 @@ img.hero {
   overflow-x: scroll;
   overflow-y: hidden;
   background-color: orange;
+}}
+
+/* footer */
+
+.footer_links {
+  display: inline;
+  width: 150px;
+
 }
