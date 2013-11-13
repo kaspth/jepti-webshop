@@ -39,6 +39,11 @@ function current_user() {
   return fetch_user_by_id($_SESSION["user_id"]);
 }
 
+function current_user_path() {
+  $id = current_user()["id"];
+  return "user.php?id={$id}";
+}
+
 function logout_user() {
   unset($_SESSION["user_id"]);
 }
