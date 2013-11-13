@@ -10,5 +10,25 @@
 {
   "id": 3,
   "title": "Ferie"
+},
+{
+  "id": 4,
+  "title": "Fest"
+},
+{
+  "id": 5,
+  "title": "Til Hjemmet"
+},
+{
+  "id": 6,
+  "title": "Værktøj"
+},
+{
+  "id": 7,
+  "title": "Mode"
+},
+{
+  "id": 8,
+  "title": "Sport og Fritid"
 }
 ]
