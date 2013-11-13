@@ -8,7 +8,7 @@ include_once 'json_helper.php';
 
 function fetch_user_by_id($id) {
   $users = read_json('db/users/users.json');
-  if (!isset($users)) return null;
+  if (!isset($id) || !isset($users)) return null;
   return $users[$id - 1]; # adjust for zero indexing
 }
 
@@ -36,6 +36,7 @@ function authenticate_user($user, $password) {
 }
 
 function current_user() {
+  if (!isset($_SESSION["user_id"])) return null;
   return fetch_user_by_id($_SESSION["user_id"]);
 }
 
