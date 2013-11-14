@@ -1,0 +1,59 @@
+@media all and (min-width: 1024px) {
+ 
+	.categories a article {
+	 	display: inline-block;
+	 	max-width: 500px;
+	 	max-height: 200px;
+	 	margin-bottom: 5px;
+	}
+
+	.categories {
+		margin: 0 26px;
+		padding: 0 38px;
+	}
+}
+
+@media all and (min-width: 1280px) {
+ 
+	.categories a article {
+	 	display: inline-block;
+	 	max-width: 500px;
+	 	max-height: 200px;
+	 	margin-bottom: 5px;
+	}
+
+	.categories {
+		margin: 0 26px;
+		padding: 0 164px;
+	}
+}
+
+@media all and (min-width: 1366px) {
+ 
+	.categories a article {
+	 	display: inline-block;
+	 	max-width: 500px;
+	 	max-height: 200px;
+	 	margin-bottom: 5px;
+	}
+
+	.categories {
+		margin: 0 26px;
+		padding: 0 210px;
+	}
+}
+
+@media all and (min-width: 1440px) {
+ 
+	.categories a article {
+	 	display: inline-block;
+	 	max-width: 500px;
+	 	max-height: 200px;
+	 	margin-bottom: 5px;
+	}
+
+	.categories {
+		margin: 0 26px;
+		padding: 0 247px;
+	}
+}
