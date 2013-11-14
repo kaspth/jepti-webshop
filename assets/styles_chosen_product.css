@@ -1,23 +1,29 @@
 .under_picture div {
-	max-width: 400px;
+	max-width: 50%;
 	display: inline-block;
 }
 
+.description {
+	float: right;
+	width: 446px;
+}
+
 .list-information {
-	max-width: 255px;
-	margin: 5px 0 10px 10px;
+	margin: 5px;
 	display: inline-block;
+	width: 240px;
+	float: left;
 }
 
 .list-information ul, li {
 	display: inline-block;
-	max-width: 10px;
+	width: 250px;
 }
 
 .list_under_picture {
 	display: inline-block;
+	max-width: 250px;
 }
-
 
 .user-link-right {
 	display: inline-block;
