@@ -1,4 +1,3 @@
-<link href="assets/styles_products.css" rel="stylesheet" type="text/css">
 <a class="product-link" href="product.php?id=<?php echo $product['id']; ?>">
   <article class="product-listing">
     <div class="crop">

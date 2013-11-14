@@ -177,7 +177,8 @@ img.hero {
 }
 
 .products {
-  padding: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .product-link {
@@ -284,6 +285,15 @@ footer {
 
 @media screen and (min-width: 500px) {
   .category {
+    width: calc(50% - 10px);
+  }
+
+  .products {
+    width: 80%;
+  }
+
+  .product-listing {
+    display: inline-block;
     width: calc(50% - 10px);
   }
 }
