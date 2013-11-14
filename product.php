@@ -15,6 +15,7 @@ $uploaded_by_current_user = current_user_exists() && current_user()["id"] == $us
   <head>
     <?php include 'includes/head.php'; ?>
     <title><?php echo $product['name']; ?></title>
+    <link href="assets/styles_chosen-product.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <?php include 'includes/header.php'; ?>
@@ -22,7 +23,13 @@ $uploaded_by_current_user = current_user_exists() && current_user()["id"] == $us
     <section class="product">
       <header class="information">
         <h1 class="title"><?php echo $product['name']; ?></h1>
+      </header>
+      
+      <section class="under_picture">
+
+        <div class="picture_of_product">
         <?php echo image_tag_for_product($product); ?>
+        </div>
 
         <?php if ($uploaded_by_current_user) { ?>
           <a class="right-link" href="rentals.php">Se forespørgsler</a>
@@ -33,13 +40,15 @@ $uploaded_by_current_user = current_user_exists() && current_user()["id"] == $us
           </a>
         <?php } ?>
 
-        <section class="list-information">
-          <a href="http://maps.google.com">Vis på kort</a>
-          <div><?php echo $product['city']; ?></div>
-          <div><?php echo $product['price_per_day']; ?> kr./dag</div>
+          <ul>
+            <a class="user-link right" href="user.php?id=<?php echo $user['id'] ?>">
+              <li><h3>Uploadet af <?php echo $user['first_name'] ?></h3></li>
+              <li><?php echo $user['last_name'] ?></li>
+            </a>
+          </ul>
         </section>
-      </header>
-
+      </section>
+      
       <section class="description">
         <header>
           <h3 class="subtitle">Beskrivelse</h3>
