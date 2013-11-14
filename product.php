@@ -44,15 +44,15 @@ $uploaded_by_current_user = current_user_exists() && current_user()["id"] == $us
               <li><?php echo $user['last_name'] ?></li>
             </a>
           </ul>
+
+          <section class="description">
+            <header>
+              <h3 class="subtitle">Beskrivelse</h3>
+            </header>
+            <p><?php echo $product['description']; ?></p>
+          </section>
         </div>
-
-        <section class="description">
-          <header>
-            <h3 class="subtitle">Beskrivelse</h3>
-          </header>
-          <p><?php echo $product['description']; ?></p>
-        </section>
-
+        
       </section>
 
       <?php if (!$uploaded_by_current_user) { ?>
