@@ -240,3 +240,12 @@ img.hero {
 .information img {
   padding-bottom: 10px;
 }
+
+.timeline-container {
+  margin: 15px 0;
+  width: 100%;
+  height: 80px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: orange;
+}

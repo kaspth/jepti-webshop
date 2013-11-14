@@ -11,4 +11,14 @@ $(function() {
       $hidden.removeClass("hidden");
     });
   });
+
+  var imageId = 1;
+  $("img.replaceable").on("click", function() {
+    var image = $(this);
+
+    imageId++;
+    if (imageId > 3) imageId = 1;
+
+    image.attr("src", "assets/timeline_images/" + imageId + ".jpg");
+  });
 });
