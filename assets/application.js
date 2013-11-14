@@ -21,4 +21,9 @@ $(document).ready(function() {
 
     image.attr("src", "assets/timeline_images/" + imageId + ".jpg");
   });
+
+  $(".search").on("click", function() {
+    // exchange with search field.
+    // toggle a class, don't generate a field and insert it into the document.
+  });
 });
