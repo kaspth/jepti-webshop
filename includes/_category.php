@@ -1,4 +1,3 @@
-<link href="assets/styles_index.css" rel="stylesheet" type="text/css">
 <?php $id = $category['id']; ?>
 <a class="category-link" href="products.php?category_id=<?php echo $id; ?>">
   <article class="category" id="<?php echo $id; ?>">
