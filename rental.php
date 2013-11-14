@@ -20,7 +20,7 @@ add_rental_to_user($user_rented_from, $rental);
     <section class="center-section">
       <header>
         <h1 class="title">Tak skal du have, <?php echo $renter["first_name"]; ?>.</h1>
-        <p>Vi har sendt en mail til <?php echo $user_rented_from["first_name"]; ?> med din forespørgsel.</p>
+        <p class="subtitle">Vi har sendt en mail til <?php echo $user_rented_from["first_name"]; ?> med din forespørgsel.</p>
       </header>
     </section>
 
