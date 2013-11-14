@@ -3,6 +3,10 @@
 	display: inline-block;
 }
 
+.picture_of_product, .description {
+	margin-top: 20px;
+}
+
 .description {
 	float: right;
 	width: 446px;
@@ -11,20 +15,17 @@
 .list-information {
 	margin: 5px;
 	display: inline-block;
-	width: 240px;
+	width: 470px;
 	float: left;
 }
 
 .list-information ul, li {
 	display: inline-block;
-	width: 250px;
+	width: 233px;
 }
 
 .list_under_picture {
 	display: inline-block;
-	max-width: 250px;
-}
-
-.user-link-right {
-	display: inline-block;
+	max-width: 233px;
+	float: left;
 }

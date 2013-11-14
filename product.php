@@ -46,10 +46,10 @@ $uploaded_by_current_user = current_user_exists() && current_user()["id"] == $us
           </ul>
 
           <ul class="list_under_picture">
-              <li><a class="user-link right" href="user.php?id=<?php echo $user['id'] ?>"></a></li>
+            <a class="user-link right" href="user.php?id=<?php echo $user['id'] ?>">
               <li><h3>Uploadet af <?php echo $user['first_name'] ?></h3></li>
               <li><?php echo $user['last_name'] ?></li>
-            
+            </a>
           </ul>
         </div>
       </section>
