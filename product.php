@@ -57,7 +57,7 @@ $uploaded_by_current_user = current_user_exists() && current_user()["id"] == $us
             <form action="rental.php" method="post">
               <input name="product_id" type="hidden" value="<?php echo $product_id; ?>">
               <input name="user_id" type="hidden" value="<?php echo $user["id"]; ?>">
-              
+
               <input type="submit" value="Forespørg udlejning">
             </form>
           </section>
