@@ -4,7 +4,7 @@ include_once 'json_helper.php';
 
 # rentals are integer indexed arrays of associative arrays
 function fetch_rentals_for_user($user) {
-  $path = rentals_path_for_user($user["id"]);
+  $path = rentals_path_for_user($user);
   return read_json($path);
 }
 

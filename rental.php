@@ -5,7 +5,7 @@ include_once 'helpers/users_helper.php';
 $renter = current_user();
 $user_rented_from = fetch_user_by_id($_POST["user_id"]);
 
-$rental = build_rental($_POST["product_id"], $renter["id"]);
+$rental = build_rental((int)$_POST["product_id"], $renter["id"]);
 add_rental_to_user($user_rented_from, $rental);
 ?>
 <!DOCTYPE html>
