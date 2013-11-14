@@ -54,7 +54,12 @@ $uploaded_by_current_user = current_user_exists() && current_user()["id"] == $us
           </section>
 
           <section class="rental center-section">
-            <a href="rental.php">Forespørg udlejning</a>
+            <form action="rental.php" method="post">
+              <input name="product_id" type="hidden" value="<?php echo $product_id; ?>">
+              <input name="user_id" type="hidden" value="<?php echo $user["id"]; ?>">
+              
+              <input type="submit" value="Forespørg udlejning">
+            </form>
           </section>
         <?php } ?>
       <?php } else { ?>

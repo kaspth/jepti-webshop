@@ -1,12 +1,12 @@
 <?php
 include_once 'helpers/rentals_helper.php';
+include_once 'helpers/users_helper.php';
 
-$renter_id = $_POST["renter_id"];
-$renter = fetch_user_by_id($renter_id);
-$user = current_user();
+$renter = current_user();
+$user_rented_from = fetch_user_by_id($_POST["user_id"]);
 
-$rental = build_rental($_POST["product_id"], $renter_id);
-add_rental_to_user($user, $rental);
+$rental = build_rental($_POST["product_id"], $renter["id"]);
+add_rental_to_user($user_rented_from, $rental);
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,7 +20,7 @@ add_rental_to_user($user, $rental);
     <section class="center-section">
       <header>
         <h1 class="title">Tak skal du have, <?php echo $renter["first_name"]; ?>.</h1>
-        <p>Vi har sendt en mail til <?php echo $user["first_name"]; ?> med din forespørgsel.</p>
+        <p>Vi har sendt en mail til <?php echo $user_rented_from["first_name"]; ?> med din forespørgsel.</p>
       </header>
     </section>
 
