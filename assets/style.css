@@ -155,13 +155,13 @@ img.hero {
 .category, .product-listing {
   position: relative;
   overflow: hidden;
+  min-width: 400px;
   max-width: 500px;
   max-height: 200px;
 }
 
 .category {
-  margin-bottom: 5px;
-  max-height: 200px;
+  display: inline-block;
 }
 
 .category-title {
@@ -239,4 +239,19 @@ img.hero {
 
 .information img {
   padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .category {
+     width: 500px;
+  }
+
+  .categories {
+    text-align: center;
+  }
+
+  .category-title {
+    text-align: left;
+  }
 }
