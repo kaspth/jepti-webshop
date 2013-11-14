@@ -31,13 +31,6 @@ $uploaded_by_current_user = current_user_exists() && current_user()["id"] == $us
         <?php echo image_tag_for_product($product); ?>
         </div>
 
-        <section class="description">
-          <header>
-            <h3 class="subtitle">Beskrivelse</h3>
-          </header>
-          <p><?php echo $product['description']; ?></p>
-        </section>
-
         <div class="list-information">
           <ul class="list_under_picture">
             <li><a href="http://maps.google.com">Vis på kort</a></li>
@@ -52,6 +45,14 @@ $uploaded_by_current_user = current_user_exists() && current_user()["id"] == $us
             </a>
           </ul>
         </div>
+
+        <section class="description">
+          <header>
+            <h3 class="subtitle">Beskrivelse</h3>
+          </header>
+          <p><?php echo $product['description']; ?></p>
+        </section>
+
       </section>
 
       <?php if (!$uploaded_by_current_user) { ?>

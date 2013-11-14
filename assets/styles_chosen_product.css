@@ -1,31 +1,43 @@
-.under_picture div {
-	max-width: 50%;
-	display: inline-block;
-}
+@media all and (min-width: 960px) {
+	.under_picture div {
+		max-width: 50%;
+		display: inline-block;
+	}
 
-.picture_of_product, .description {
-	margin-top: 20px;
-}
+	.picture_of_product, .description {
+		margin-top: 20px;
+	}
 
-.description {
-	float: right;
-	width: 446px;
-}
+	.description {
+		float: right;
+		width: 446px;
+	}
 
-.list-information {
-	margin: 5px;
-	display: inline-block;
-	width: 470px;
-	float: left;
-}
+	.list-information {
+		margin: 18px 24px 0 0;
+		display: inline-block;
+		width: 449px;
+		float: right;
+	}
 
-.list-information ul, li {
-	display: inline-block;
-	width: 233px;
-}
+	.list-information ul, li {
+		display: inline-block;
+		width: 233px;
+	}
 
-.list_under_picture {
-	display: inline-block;
-	max-width: 233px;
-	float: left;
+	.list_under_picture {
+		display: inline-block;
+		max-width: 193px;
+		float: left;
+		padding: 0 21px 0;
+	}
+
+	.user-link {
+		margin: 0;
+	}
+
+	.timeline-container {
+		max-width: 200px;
+	}
 }
+@media all and (min-width: 960px) {
