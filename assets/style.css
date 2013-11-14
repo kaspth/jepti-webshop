@@ -252,31 +252,29 @@ img.hero {
 }}
 
 /* footer */
-
 footer {
-  background-color: #4aac48;
+  margin: 20px 0 0;
   max-height: 100%;
   font-size: 80%;
   color: #efefef;
-  margin: 20px 0 0;
+  background-color: #4aac48;
 }
 
-.footer_links {
-  padding: 16px;
+.footer-links, address.footer {
   display: inline-block;
+  padding: 16px;
+}
+
+.footer-links {
   float: left;
   width: 150px;
 }
 
-.footer_links a {
+.footer-links a {
   color: inherit;
-}
-
-#footer_adresse {
-  display: inline-block;
-  padding: 16px;
 }
 
 .copyright {
   margin: 18px 15px 0;
+  padding: 20px 0 0;
 }
