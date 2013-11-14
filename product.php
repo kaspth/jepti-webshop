@@ -8,7 +8,7 @@ if (!isset($product_id))
 
 $product = fetch_product_by_id($product_id);
 $user = fetch_user_by_id($product['user_id']);
-$uploaded_by_current_user = current_user()["id"] == $user["id"];
+$uploaded_by_current_user = current_user_exists() && current_user()["id"] == $user["id"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,13 +47,19 @@ $uploaded_by_current_user = current_user()["id"] == $user["id"];
         <p><?php echo $product['description']; ?></p>
       </section>
 
-      <?php if (!$uploaded_by_current_user) { ?>
-        <section class="timeline-container">
-          <img class="replaceable" src="assets/timeline_images/1.jpg" alt="">
-        </section>
+      <?php if (current_user_exists()) { ?>
+        <?php if (!$uploaded_by_current_user) { ?>
+          <section class="timeline-container">
+            <img class="replaceable" src="assets/timeline_images/1.jpg" alt="">
+          </section>
 
-        <section class="rental center-section">
-          <a href="rental_request.php">Forespørg udlejning</a>
+          <section class="rental center-section">
+            <a href="rental.php">Forespørg udlejning</a>
+          </section>
+        <?php } ?>
+      <?php } else { ?>
+        <section class="center-section">
+          <a href="login.php">Log ind for at leje</a>
         </section>
       <?php } ?>
     </section>

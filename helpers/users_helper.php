@@ -35,6 +35,10 @@ function authenticate_user($user, $password) {
   return false;
 }
 
+function current_user_exists() {
+  return isset($_SESSION["user_id"]);
+}
+
 function current_user() {
   if (!isset($_SESSION["user_id"])) return null;
   return fetch_user_by_id($_SESSION["user_id"]);
