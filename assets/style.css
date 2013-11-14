@@ -242,17 +242,19 @@ img.hero {
   float: right;
 }
 
-.information img {
-  padding-bottom: 10px;
-}
-
 .timeline-container {
   margin: 15px 0;
   width: 100%;
   height: 80px;
   overflow-x: scroll;
   overflow-y: hidden;
+  text-align: center;
   background-color: orange;
+}
+
+.rental {
+  margin: 10px 0;
+  text-align: center;
 }
 
 /* footer */
@@ -295,5 +297,27 @@ footer {
   .product-listing {
     display: inline-block;
     width: calc(50% - 10px);
+  }
+
+  .product-image {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  .product {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .product-image {
+    float: left;
+  }
+
+  .product {
+    display: inline-block;
+    width: calc(100% - 500px);
+    padding: 15px 0;
   }
 }
