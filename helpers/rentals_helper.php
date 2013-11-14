@@ -17,6 +17,7 @@ function build_rental($product_id, $renter_id) {
 
 # a rental is a reference between the current user and the user of the requested product
 function add_rental_to_user($user, $rental) {
+  if (!isset($user)) return;
   $rentals = fetch_rentals_for_user($user);
 
   if (!isset($rentals)) $rentals = array();
