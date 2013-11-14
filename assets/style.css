@@ -243,3 +243,9 @@ img.hero {
 .information img {
   padding-bottom: 10px;
 }
+
+@media screen and (min-width: 500px) {
+  .category {
+    width: calc(50% - 10px);
+  }
+}
