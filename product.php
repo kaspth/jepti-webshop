@@ -8,6 +8,7 @@ if (!isset($product_id))
 
 $product = fetch_product_by_id($product_id);
 $user = fetch_user_by_id($product['user_id']);
+$uploaded_by_current_user = current_user_exists() && current_user()["id"] == $user["id"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,10 +24,14 @@ $user = fetch_user_by_id($product['user_id']);
         <h1 class="title"><?php echo $product['name']; ?></h1>
         <?php echo image_tag_for_product($product); ?>
 
-        <a class="user-link right" href="user.php?id=<?php echo $user['id'] ?>">
-          <h3>Uploadet af <?php echo $user['first_name'] ?></h3>
-          <div><?php echo $user['last_name'] ?></div>
-        </a>
+        <?php if ($uploaded_by_current_user) { ?>
+          <a class="right-link" href="rentals.php">Se forespørgsler</a>
+        <?php } else { ?>
+          <a class="right-link" href="user.php?id=<?php echo $user['id'] ?>">
+            <h3>Uploadet af <?php echo $user['first_name'] ?></h3>
+            <div><?php echo $user['last_name'] ?></div>
+          </a>
+        <?php } ?>
 
         <section class="list-information">
           <a href="http://maps.google.com">Vis på kort</a>
@@ -42,13 +47,24 @@ $user = fetch_user_by_id($product['user_id']);
         <p><?php echo $product['description']; ?></p>
       </section>
 
-      <?php if (!$uploaded_by_current_user) { ?>
-        <section class="timeline-container">
-          <img class="replaceable" src="assets/timeline_images/1.jpg" alt="">
-        </section>
+      <?php if (current_user_exists()) { ?>
+        <?php if (!$uploaded_by_current_user) { ?>
+          <section class="timeline-container">
+            <img class="replaceable" src="assets/timeline_images/1.jpg" alt="">
+          </section>
 
-        <section class="rental center-section">
-          <a href="rental_request.php">Forespørg udlejning</a>
+          <section class="rental center-section">
+            <form action="rental.php" method="post">
+              <input name="product_id" type="hidden" value="<?php echo $product_id; ?>">
+              <input name="user_id" type="hidden" value="<?php echo $user["id"]; ?>">
+
+              <input type="submit" value="Forespørg udlejning">
+            </form>
+          </section>
+        <?php } ?>
+      <?php } else { ?>
+        <section class="center-section">
+          <a href="login.php">Log ind for at leje</a>
         </section>
       <?php } ?>
     </section>

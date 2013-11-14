@@ -1,13 +1,21 @@
 <?php
 
 include_once 'json_helper.php';
-
-function fetch_products_for_category_id($id) {
-  return read_json(path_for_category_id($id));
-}
+include_once 'users_helper.php';
+include_once 'rentals_helper.php';
 
 function image_tag_for_product($product) {
   return "<img class=\"product-banner-image\" src=\"assets/product_images/{$product['id']}.jpg\" alt=\"{$product['name']}\" />";
+}
+
+function rent_product($product) {
+  $rental = build_rental($product["id"], current_user()["id"]);
+  $user = fetch_user_by_id($product["user_id"]);
+  add_rental_to_user($user, $rental);
+}
+
+function fetch_products_for_category_id($id) {
+  return read_json(path_for_category_id($id));
 }
 
 function fetch_product_by_id($id) {
@@ -53,4 +61,5 @@ function map_products($operation) {
 function path_for_category_id($id) {
   return "db/products/{$id}/products.json";
 }
+
 ?>

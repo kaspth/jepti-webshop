@@ -229,12 +229,13 @@ img.hero {
   bottom: 10px;
 }
 
-.background.inset *, .user-link {
+.background.inset *, .right-link {
   margin: 0 15px;
 }
 
-.user-link.right {
+.right-link {
   text-align: right;
+  float: right;
 }
 
 .information img {
