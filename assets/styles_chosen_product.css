@@ -1,27 +1,23 @@
-.picture_of_product {
-	display: inline-block;
-	width: 50%;
-}
-
-.under_picture {
-	max-width: 480px;
-	display: inline-block;
-}
-
-.list-information ul li {
-	display: inline-block;
-	max-width: 50px;
-}
-
-.list-information ul {
+.under_picture div {
+	max-width: 400px;
 	display: inline-block;
 }
 
 .list-information {
 	max-width: 255px;
 	margin: 5px 0 10px 10px;
-	display: -webkit-flex;
+	display: inline-block;
 }
+
+.list-information ul, li {
+	display: inline-block;
+	max-width: 10px;
+}
+
+.list_under_picture {
+	display: inline-block;
+}
+
 
 .user-link-right {
 	display: inline-block;
