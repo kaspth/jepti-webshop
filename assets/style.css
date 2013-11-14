@@ -145,6 +145,7 @@ img.hero {
 
 .categories {
   padding: 0;
+  text-align: center;
 }
 
 .category-link {
@@ -152,21 +153,23 @@ img.hero {
   color: inherit;
 }
 
-.category, .product-listing {
+.product-listing {
   position: relative;
   overflow: hidden;
-  min-width: 400px;
   max-width: 500px;
   max-height: 200px;
 }
 
 .category {
   display: inline-block;
+  position: relative;
+  max-width: 500px;
 }
 
 .category-title {
   font-size: 150%;
   padding: 2px 20px;
+  text-align: left;
 }
 
 .statement {
@@ -239,19 +242,4 @@ img.hero {
 
 .information img {
   padding-bottom: 10px;
-}
-
-@media screen and (min-width: 1024px) {
-
-  .category {
-     width: 500px;
-  }
-
-  .categories {
-    text-align: center;
-  }
-
-  .category-title {
-    text-align: left;
-  }
 }
