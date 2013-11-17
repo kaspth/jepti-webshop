@@ -1,0 +1,9 @@
+require __dir__ + '/scripts/validate'
+
+task :validate do
+  rv = RemoteValidator.new('http://kasp853b.keaweb.dk/jepti-webshop')
+  rv.pattern = '*.php'
+  rv.validate do |result|
+    rv.print_errors result.errors
+  end
+end
