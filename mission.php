@@ -32,7 +32,7 @@
       <a class="forward-redirect" href="http://www.skat.dk/SKAT.aspx?oId=5811&vId=0&lang=DA">Læs mere om dine skattepligtige forhold på Jepti</a>
     </section>
 
-    <section class="center-section">
+    <section class="center-section push-footer-down">
       <a class="button" href="faq.php">FAQ</a>
       <a class="button" href="support.php">Support</a>
     </section>

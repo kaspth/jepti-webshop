@@ -294,6 +294,10 @@ footer {
   text-align: center;
 }
 
+.push-footer-down {
+  height: 50px; /* fix half-occluded buttons at mission.php bottom */
+}
+
 @media screen and (min-width: 500px) {
   .category {
     width: calc(50% - 10px);
