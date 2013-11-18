@@ -1,9 +1,8 @@
 require __dir__ + '/scripts/validate'
 
 task :validate do
-  rv = RemoteValidator.new('http://kasp853b.keaweb.dk/jepti-webshop')
-  rv.pattern = '*.php'
-  rv.validate do |result|
-    rv.print_errors result.errors
-  end
+  base_uri = 'http://kasp853b.keaweb.dk/jepti-webshop'
+
+  PatternValidator.validate('./assets', '*.css', print_errors: true, validates_css: true)
+  RemoteValidator.validate(base_uri, '.', '*.php', print_errors: true)
 end
