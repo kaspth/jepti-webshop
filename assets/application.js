@@ -1,6 +1,6 @@
-$(function() {
+$(document).ready(function() {
 
-  $("form.fade-on-submit").on('submit', function(e) {
+  $("form.fade-on-submit").on("submit", function(e) {
     var $fadeElement = $(".fade-on-submit");
     if (!$fadeElement) return;
 
