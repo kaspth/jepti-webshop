@@ -1,14 +1,14 @@
 <?php
-include_once 'helpers/products_helper.php';
-include_once 'helpers/users_helper.php';
-
-$product_id = $_GET['id'];
-if (!isset($product_id))
-  header('Location: index.php');
-
-$product = fetch_product_by_id($product_id);
-$user = fetch_user_by_id($product['user_id']);
-$uploaded_by_current_user = current_user_exists() && current_user()["id"] == $user["id"];
+  include_once 'helpers/products_helper.php';
+  include_once 'helpers/users_helper.php';
+  
+  $product_id = $_GET['id'];
+  if (!isset($product_id))
+    header('Location: index.php');
+  
+  $product = fetch_product_by_id($product_id);
+  $user = fetch_user_by_id($product['user_id']);
+  $uploaded_by_current_user = current_user_exists() && current_user()["id"] == $user["id"];
 ?>
 <!DOCTYPE html>
 <html>

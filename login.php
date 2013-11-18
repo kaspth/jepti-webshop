@@ -1,11 +1,11 @@
 <?php
-include_once 'helpers/users_helper.php';
+  include_once 'helpers/users_helper.php';
 
-if (isset($_POST["email"])) {
-  $user = fetch_user_by_email($_POST["email"]);
-  
-  if (authenticate_user($user, $_POST["password"]))
-    header("Location: user.php?id=" . $user["id"]);
+  if (isset($_POST["email"])) {
+    $user = fetch_user_by_email($_POST["email"]);
+
+    if (authenticate_user($user, $_POST["password"]))
+      header("Location: user.php?id=" . $user["id"]);
 }
 ?>
 <!DOCTYPE html>

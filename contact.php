@@ -7,27 +7,25 @@
 </head>
 <body>
   <?php include 'includes/header.php'; ?>
-  
-  
 
   <section class="fade-on-submit sheet">
     <h1 class="title">Kontakt os</h1>
-        <form class="contact" method="post" action="">
+      <form class="contact" method="post" action="">
 
-          <label for="email">Email:</label>
-          <div class="input_field">
-            <input type="text" id="email" name="email" /><br>
-          </div>
+        <label for="email">Email:</label>
+        <div class="input_field">
+          <input type="text" id="email" name="email" /><br>
+        </div>
 
-          <label for="message">Besked:</label>
-          <div class="input_field">
-            <textarea id="message" name="message"></textarea>
-          </div>
+        <label for="message">Besked:</label>
+        <div class="input_field">
+          <textarea id="message" name="message"></textarea>
+        </div>
 
-          <div class="submit_field">
-            <input type="submit" name="submit" value="Send besked"/>
-          </div>
-        </form>
+        <div class="submit_field">
+          <input type="submit" name="submit" value="Send besked"/>
+        </div>
+      </form>
   </section>
 
   <section class="hidden receipt">
