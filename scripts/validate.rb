@@ -57,15 +57,14 @@ class PatternValidator
 end
 
 class RemoteValidator < PatternValidator
-  attr_accessor :remote_root, :local_root, :page_arguments
+  attr_accessor :remote_root, :request_arguments
 
   def initialize(remote_root, local_root = '.', pattern = '*')
     super(local_root, pattern)
-    @remote_root = remote_root
-    @local_root = File.expand_path(local_root)
 
+    @remote_root = remote_root
     @results = []
-    @page_arguments = read_page_arguments
+    @request_arguments = read_request_arguments
   end
 
   def validate_page(file)
@@ -78,7 +77,7 @@ class RemoteValidator < PatternValidator
 
   def arguments_for(file)
     name = File.basename file, File.extname(file)
-    @page_arguments.fetch name, {}
+    @request_arguments.fetch name, {}
   end
 
   def build_uri(name, arguments = {})
@@ -92,8 +91,8 @@ class RemoteValidator < PatternValidator
     uri
   end
 
-  def read_page_arguments
-    path = File.join @local_root, 'validation.yaml'
+  def read_request_arguments
+    path = File.join @root, 'validation.yaml'
     Psych.load File.read(path) if File.exist? path
   end
 end
