@@ -8,7 +8,9 @@ function fetch_categories() {
 
 function fetch_category_by_id($id) {
   $categories = fetch_categories();
-  if ($categories == null) return null;
+
+  if (!isset($categories)) return null;
+
   return $categories[$id - 1]; # adjust for zero indexing
 }
 
