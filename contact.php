@@ -33,7 +33,7 @@
     <p>Det betyder meget for os.</p>
   </section>
 
-  <?php include 'includes/scripts.php'; ?>
   <?php include 'includes/footer.php'; ?>
+  <?php include 'includes/scripts.php'; ?>
 </body>
 </html>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <?php include 'helpers/head.php'; ?>
+    <?php include 'includes/head.php'; ?>
     <title>Tilmeld dig</title>
 </head>
 <body>
-  <?php include 'helpers/header.php'; ?>
+  <?php include 'includes/header.php'; ?>
 
   <section class="signup">
     <h1 class="title">Tilmeld dig</h1>
@@ -33,7 +33,7 @@
     </form>
   </section>
 
-  <?php include 'helpers/scripts.php'; ?>
-  <?php include 'helpers/footer.php'; ?>
+  <?php include 'includes/footer.php'; ?>
+  <?php include 'includes/scripts.php'; ?>
 </body>
 </html>
