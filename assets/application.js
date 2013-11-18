@@ -5,11 +5,7 @@ $(document).ready(function() {
     if (!$fadeElement) return;
 
     e.preventDefault();
-    $fadeElement.fadeOut(400, function() {
-      var $hidden = $(".hidden");
-      $hidden.fadeIn(400);
-      $hidden.removeClass("hidden");
-    });
+    fadeOutAndRevealBeneath($fadeElement);
   });
 
   var imageId = 1;
@@ -22,8 +18,15 @@ $(document).ready(function() {
     image.attr("src", "assets/timeline_images/" + imageId + ".jpg");
   });
 
-  $(".search").on("click", function() {
-    // exchange with search field.
-    // toggle a class, don't generate a field and insert it into the document.
+  $(".switch-on-click").on("click", function() {
+    fadeOutAndRevealBeneath($(this), 200);
   });
+
+  function fadeOutAndRevealBeneath(element, speed) {
+    if (!speed) speed = 400;
+
+    element.fadeOut(speed, function() {
+      $(".hidden").fadeIn(speed).removeClass("hidden");
+    });
+  }
 });

@@ -66,18 +66,39 @@ body {
   margin: 0 0 150px; /* match footer height */
 }
 
+.logo img {
+  max-height: 70px;
+}
+
 #application-header {
   background-color: #4aac48;
-  max-height: 70px; /* won't work because of padding */
+  max-height: 70px;
+  padding: 10px;
 }
 
-input[type=search] {
-  float: right;
+.search {
+  background: url('icons/search.png') #fcfcfc no-repeat center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid orange;
+  border-radius: 6px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-img.hero {
-  height: 200px;
-  width: 100%;
+.search:hover {
+  border-radius: 25px;
+  background-color: #f0f0f0;
+}
+
+.search, #searchField {
+  margin: auto 8px;
+}
+
+.top-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 /* footer */
