@@ -14,10 +14,9 @@
     <?php include 'includes/header.php'; ?>
 
     <section class="center-section">
-      <!-- <img class="hero" src="assets/hero.jpg"><br> -->
       <a class="button center" href="mission.php">Vores mission</a>
 
-      <?php if (current_user()) { ?>
+      <?php if (current_user_exists()) { ?>
         <a class="button center" href="<?php echo current_user_path() ?>">Min side</a>
       <?php } else { ?>
         <a class="button center" href="login.php">Log ind</a>
