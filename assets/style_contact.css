@@ -1,9 +1,9 @@
 .receipt p {
-	padding: 10px 0
+	padding: 10px 0;
 }
 
 .fade-on-submit {
-	padding: 10px 58px
+	padding: 10px 58px;
 }
 
 .contact {
@@ -11,16 +11,16 @@
 }
 
 .contact label {
-	font-size: 120%
+	font-size: 120%;
 }
 
 .input_field input, textarea {
 	margin-bottom: 15px;
-	min-width: 250px
+	min-width: 250px;
 }
 
 .input_field textarea {
-	min-height: 80px
+	min-height: 80px;
 }
 
 .submit_field input {
