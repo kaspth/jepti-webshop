@@ -10,7 +10,7 @@
 
   <section class="fade-on-submit sheet">
     <h1 class="title">Kontakt os</h1>
-      <form class="contact" method="post" action="">
+      <form class="contact" method="post" action="contact.php">
 
         <label for="email">Email:</label>
         <div class="input_field">
