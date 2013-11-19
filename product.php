@@ -66,7 +66,7 @@
       <?php } ?>
     <?php } else { ?>
       <section class="center-section">
-        <a href="login.php">Log ind for at leje</a>
+        <a href="login.php?product_id=<?php echo $product_id; ?>">Log ind for at leje</a>
       </section>
     <?php } ?>
 
