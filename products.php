@@ -21,15 +21,15 @@
   <?php include 'includes/_category.php'; ?>
 
   <section class="products">
-    <?php if (!isset($products)) { ?>
+    <?php if (isset($products)) { ?>
+      <?php foreach($products as $product) { ?>
+        <?php include 'includes/_product.php'; ?>
+      <?php } ?>
+    <?php } else { ?>
       <section class="center-section">
         <h3 class="subtitle">Der er ingen produkter i denne kategori.</h3>
         <a class="back-redirect" href="index.php">Gå tilbage</a>
       </section>
-    <?php } else { ?>
-      <?php foreach($products as $product) { ?>
-        <?php include 'includes/_product.php'; ?>
-      <?php } ?>
     <?php } ?>
   </section>
 
