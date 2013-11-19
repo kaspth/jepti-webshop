@@ -319,6 +319,27 @@ footer {
   text-align: center;
 }
 
+.receipt {
+  text-align: center;
+}
+
+.sheet {
+  padding: 10px 60px;
+}
+
+.contact {
+  padding-top: 20px;
+}
+
+.contact label {
+  font-size: 120%;
+}
+
+.contact-field {
+  margin-bottom: 15px;
+  min-width: 250px;
+}
+
 .push-footer-down {
   height: 50px; /* fix half-occluded buttons at mission.php bottom */
 }
