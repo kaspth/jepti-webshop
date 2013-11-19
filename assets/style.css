@@ -76,11 +76,16 @@ body {
   padding: 6px;
 }
 
+.search, #searchField {
+  margin: 15px 8px;
+  border: 1px solid black;
+}
+
 .search {
   background: url('icons/search.png') #fcfcfc no-repeat center;
   width: 48px;
   height: 48px;
-  border: 1px solid orange;
+  margin-top: 10px;
   border-radius: 6px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -88,11 +93,14 @@ body {
 
 .search:hover {
   border-radius: 25px;
-  background-color: #f0f0f0;
 }
 
-.search, #searchField {
-  margin: auto 8px;
+#searchField {
+  -webkit-appearance: textfield;
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 18px;
 }
 
 .top-right {

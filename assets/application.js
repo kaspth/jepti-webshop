@@ -19,14 +19,20 @@ $(document).ready(function() {
   });
 
   $(".switch-on-click").on("click", function() {
-    fadeOutAndRevealBeneath($(this), 200);
+    fadeOutAndRevealBeneath($(this), 200, function() {
+      $("#searchField").focus();
+    });
   });
 
-  function fadeOutAndRevealBeneath(element, speed) {
+  function fadeOutAndRevealBeneath(element, speed, completionFunction) {
     if (!speed) speed = 400;
 
+    var hidden = $(".hidden");
     element.fadeOut(speed, function() {
-      $(".hidden").fadeIn(speed).removeClass("hidden");
+      hidden.fadeIn(speed, function() {
+        hidden.removeClass("hidden");
+        completionFunction();
+      });
     });
   }
 });
