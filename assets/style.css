@@ -344,6 +344,39 @@ footer {
   height: 50px; /* fix half-occluded buttons at mission.php bottom */
 }
 
+/* faq page */
+.questions, .answers {
+  margin: 20px;
+}
+
+.questions .subtitle {
+  padding: 20px 0 5px;
+}
+
+.questions-list li {
+  padding: 6px 0;
+}
+
+.answers {
+  padding: 15px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+}
+
+.answer {
+  padding: 15px 0;
+}
+
+.answer h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+.answer ul {
+  list-style: circle;
+  margin: 20px;
+}
+
 @media screen and (min-width: 500px) {
   #application-header {
     height: 70px;
@@ -370,6 +403,25 @@ footer {
   .product {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .questions, .answers {
+    margin: 20px auto;
+  }
+
+  .questions section {
+    float: left;
+    width: 30%;
+    padding: 10px;
+  }
+
+  .questions-list {
+    max-width: 380px;
+  }
+
+  .answers {
+    width: 50%;
+    max-width: 500px;
   }
 }
 
