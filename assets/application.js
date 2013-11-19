@@ -27,7 +27,7 @@ $(document).ready(function() {
   function fadeOutAndRevealBeneath(element, speed, completionFunction) {
     if (!speed) speed = 400;
 
-    var hidden = $(".hidden");
+    var hidden = element.siblings(".hidden");
     element.fadeOut(speed, function() {
       hidden.fadeIn(speed, function() {
         hidden.removeClass("hidden");
