@@ -103,14 +103,14 @@
         <p class="jeptis_answer">
           For at vi kan give den bedste og mest sikre oplevelse for både lejere og udlejere er det vigtigt
           at vi får kontaktinformationer på de enkelte parter. Det giver til gengæld dig en række fordele:
-          <ul class="answers_list">
-            <li>Det sparer tid ved brug af standard kontrakter så informationerne udfyldes automatisk</li>
-            <li>Den løbende kommunikation med en potentiel udlejer er automatiseret og alle svar kommer direkte i din indbakke</li>
-            <li>Det er med til at bidrage til sikkerheden i vores system mellem lejer og udlejer</li>
-            <li>Du kan selv være udlejer. Det er blot at kigge i din hustand og se hvad du har, som du gerne vil beholde,
-                men ikke bruger så ofte. Så har du muligheden for at tjene lidt penge på dit ”lager” ved at leje det ud</li>
-          </ul>
         </p>
+        <ul class="answers_list">
+          <li>Det sparer tid ved brug af standard kontrakter så informationerne udfyldes automatisk</li>
+          <li>Den løbende kommunikation med en potentiel udlejer er automatiseret og alle svar kommer direkte i din indbakke</li>
+          <li>Det er med til at bidrage til sikkerheden i vores system mellem lejer og udlejer</li>
+          <li>Du kan selv være udlejer. Det er blot at kigge i din hustand og se hvad du har, som du gerne vil beholde,
+              men ikke bruger så ofte. Så har du muligheden for at tjene lidt penge på dit ”lager” ved at leje det ud</li>
+        </ul>
       </article>
 
       <article id="8" class="answer">
@@ -151,11 +151,13 @@
           Det er gratis at oprette en profil og annoncer på sitet.
 
           Du opretter en annonce  på følgende måde:
-          <ol class="answers_list">
-            <li>Du opretter en profil på Jepti</li>
-            <li>Du modtager en aktiverings email</li>
-            <li>Du får adgang til at logge ind til din personlige side.</li>
-          </ol>
+        </p>
+        <ul class="answers_list">
+          <li>Du opretter en profil på Jepti</li>
+          <li>Du modtager en aktiverings email</li>
+          <li>Du får adgang til at logge ind til din personlige side.</li>
+        </ul>
+        <p class="jeptis_answer">
           Her klikker du på "tilføj produkt" og så er du i gang.
         </p>
       </article>
