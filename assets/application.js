@@ -5,11 +5,7 @@ $(document).ready(function() {
     if (!$fadeElement) return;
 
     e.preventDefault();
-    $fadeElement.fadeOut(400, function() {
-      var $hidden = $(".hidden");
-      $hidden.fadeIn(400);
-      $hidden.removeClass("hidden");
-    });
+    fadeOutAndRevealBeneath($fadeElement);
   });
 
   var imageId = 1;
@@ -21,4 +17,22 @@ $(document).ready(function() {
 
     image.attr("src", "assets/timeline_images/" + imageId + ".jpg");
   });
+
+  $(".switch-on-click").on("click", function() {
+    fadeOutAndRevealBeneath($(this), 200, function() {
+      $("#searchField").focus();
+    });
+  });
+
+  function fadeOutAndRevealBeneath(element, speed, completionFunction) {
+    if (!speed) speed = 400;
+
+    var hidden = $(".hidden");
+    element.fadeOut(speed, function() {
+      hidden.fadeIn(speed, function() {
+        hidden.removeClass("hidden");
+        completionFunction();
+      });
+    });
+  }
 });
