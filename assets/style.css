@@ -71,13 +71,20 @@ body {
 }
 
 #application-header {
+  position: relative;
   background-color: #4aac48;
   height: 54px;
   padding: 6px;
 }
 
+.search-container {
+  position: absolute;
+  top: 20%;
+  right: 8px;
+  height: 54px;
+}
+
 .search, #searchField {
-  margin: 15px 8px;
   border: 1px solid black;
 }
 
@@ -85,28 +92,17 @@ body {
   background: url('icons/search.png') #fcfcfc no-repeat center;
   width: 48px;
   height: 48px;
-  margin-top: 10px;
-  border-radius: 6px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.search:hover {
   border-radius: 25px;
 }
 
 #searchField {
+  position: relative;
+  top: 20%;
   -webkit-appearance: textfield;
   width: 200px;
   height: 30px;
   padding: 5px;
   border-radius: 18px;
-}
-
-.top-right {
-  position: absolute;
-  top: 0px;
-  right: 0px;
 }
 
 /* footer */
