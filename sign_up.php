@@ -10,7 +10,7 @@
   <section class="signup">
     <h1 class="title">Tilmeld dig</h1>
 
-    <form class="formular" method="post" action="<?php# find suitable action ?>">
+    <form class="formular" method="post" action="sign_up.php">
       <label for="name">Fornavn:</label><br>
       <input type="text" id="first_name" /><br>
       <label for="efternavn">Efternavn:</label><br>
